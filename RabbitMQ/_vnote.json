@@ -20,6 +20,16 @@
             "name": "RabbitMQ集群部署.md",
             "tags": [
             ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2022-07-06T16:22:11Z",
+            "modified_time": "2022-07-06T17:00:38Z",
+            "name": "集群中的队列.md",
+            "tags": [
+            ]
         }
     ],
     "sub_directories": [
