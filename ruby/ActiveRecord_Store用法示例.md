@@ -74,3 +74,4 @@ irb(main):009:0> p.body[:no_set]
 => "这个属性没有在model声明"
 irb(main):010:0> p.no_set #这个会报错
 ```
+
