@@ -8,3 +8,13 @@ github.User{Login:"dccmmtop", ID:17303988, NodeID:"MDQ6VXNlcjE3MzAzOTg4", Avatar
 2022-07-27T14:46:37.024+0800	[35mDEBUG[0m	cmd/issue.go:26	处理新增文件
 2022-07-27T14:46:37.024+0800	[35mDEBUG[0m	cmd/issue.go:32	处理更新的文件
 2022-07-27T14:46:37.024+0800	[35mDEBUG[0m	cmd/issue.go:38	处理删除的文件
+2022-07-27T14:50:37.917+0800	[35mDEBUG[0m	utils/github.go:28	Rate: github.Rate{Limit:5000, Remaining:4998, Reset:time.Date(2022, time.July, 27, 15, 46, 36, 0, time.Local)}
+2022-07-27T14:50:37.917+0800	[35mDEBUG[0m	utils/github.go:32	Token Expiration: 2022-10-25 10:44:35 +0800 CST
+2022-07-27T14:50:37.917+0800	[35mDEBUG[0m	utils/github.go:34	
+github.User{Login:"dccmmtop", ID:17303988, NodeID:"MDQ6VXNlcjE3MzAzOTg4", AvatarURL:"https://avatars.githubusercontent.com/u/17303988?v=4", HTMLURL:"https://github.com/dccmmtop", GravatarID:"", Name:"DC", Blog:"https://dccmmtop.github.io/", Location:"China", Email:"dccmmtop@foxmail.com", Bio:"喜爱编程
+擅长 ruby Golang
+对Vim 情有独钟", TwitterUsername:"dccmmtop", PublicRepos:80, PublicGists:0, Followers:2, Following:2, CreatedAt:github.Timestamp{2016-02-17 22:53:29 +0000 UTC}, UpdatedAt:github.Timestamp{2022-07-16 12:49:56 +0000 UTC}, Type:"User", SiteAdmin:false, URL:"https://api.github.com/users/dccmmtop", EventsURL:"https://api.github.com/users/dccmmtop/events{/privacy}", FollowingURL:"https://api.github.com/users/dccmmtop/following{/other_user}", FollowersURL:"https://api.github.com/users/dccmmtop/followers", GistsURL:"https://api.github.com/users/dccmmtop/gists{/gist_id}", OrganizationsURL:"https://api.github.com/users/dccmmtop/orgs", ReceivedEventsURL:"https://api.github.com/users/dccmmtop/received_events", ReposURL:"https://api.github.com/users/dccmmtop/repos", StarredURL:"https://api.github.com/users/dccmmtop/starred{/owner}{/repo}", SubscriptionsURL:"https://api.github.com/users/dccmmtop/subscriptions"}
+2022-07-27T14:50:37.917+0800	[35mDEBUG[0m	cmd/issue.go:25	开始...
+2022-07-27T14:50:37.917+0800	[35mDEBUG[0m	cmd/issue.go:26	处理新增文件
+2022-07-27T14:50:37.917+0800	[35mDEBUG[0m	cmd/issue.go:32	处理更新的文件
+2022-07-27T14:50:37.917+0800	[35mDEBUG[0m	cmd/issue.go:38	处理删除的文件
