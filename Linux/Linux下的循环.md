@@ -1,6 +1,6 @@
 ---
-title:Linux下的循环
-date:2022-07-28 18:26:36
+title: Linux下的循环
+date: 2022-07-28 18:26:36
 tags: [linux]
 ---
 
