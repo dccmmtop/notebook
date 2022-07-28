@@ -19,7 +19,7 @@ func main() {
 	filename := "./1.txt"
 	f, err := os.Open(filename)
 	if err != nil {
-		fmt.Printf("璇诲彇 %s 澶辫触, err: %v\n", filename, err)
+		fmt.Printf("read %s fail, err: %v\n", filename, err)
 	}
 	defer f.Close()
 	reader := bufio.NewReader(f)
@@ -27,7 +27,7 @@ func main() {
 	for {
 		line, _, err := reader.ReadLine()
 		if err == io.EOF {
-			fmt.Println("鍒拌揪鏂囦欢鏈熬锛宒one!")
+			fmt.Println("done!")
 			break
 		}
 		fmt.Println(line)
