@@ -50,3 +50,4 @@ github.User{Login:"dccmmtop", ID:17303988, NodeID:"MDQ6VXNlcjE3MzAzOTg4", Avatar
 2022-07-28T15:02:17.243+0800	[35mDEBUG[0m	utils/parse.go:115	to hugo blog... F:\notebook\go语言学习\Go逐行读取文件.md
 2022-07-28T15:02:17.243+0800	[35mDEBUG[0m	utils/parse.go:123	to hugo blog success... F:\notebook\go语言学习\Go逐行读取文件.md
 2022-07-28T15:02:17.243+0800	[35mDEBUG[0m	cmd/issue.go:38	处理删除的文件
+2022-07-28T17:55:15.757+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: awk分组统计

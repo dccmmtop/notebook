@@ -1,6 +1,7 @@
 ---
 title: awk分组统计
 date: 2022-05-10 15:51:00
+tags: [awk]
 ---
 
 Shell学习笔记：awk实现group by分组统计功能
