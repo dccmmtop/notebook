@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "8e8c274c9f1ec89a",
+    "type": "split",
+    "children": [
+      {
+        "id": "d28c68fed1213385",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "工具/wps激活码.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9a08e027e5d86e50",
+    "type": "split",
+    "children": [
+      {
+        "id": "4cc3e659734c01f0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5629fdc5d6feb4f1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e65dcd2a7556a4c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#索引",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7a5f5d260b6f83f2",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "079126df85c3f0f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "ecdf82678dffdd5e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f3729af06382e39",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "工具/wps激活码.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f375cd4d9324ffef",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "工具/wps激活码.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "956eb7c8d702b89b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9f9464e5dbf632b3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "工具/wps激活码.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d28c68fed1213385",
+  "lastOpenFiles": [
+    "工具/wps激活码.md",
+    "images/20220729154150_382.png",
+    "images/20200510151512758_1191904043.png",
+    "images/20200317214342764_584675177.png",
+    "sql/索引的本质.md",
+    "Pasted image 20220729154200.png",
+    "未整理的/vim中的正则表达式.md",
+    "2022-07-29.md",
+    "go语言学习/交叉编译.md",
+    "go语言学习/变量.md"
+  ]
+}
