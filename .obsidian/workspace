@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "工具/wps激活码.md",
+            "file": "HTTP/为什么把某些参数放在请求头中.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工具/wps激活码.md",
+                "file": "HTTP/为什么把某些参数放在请求头中.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工具/wps激活码.md",
+                "file": "HTTP/为什么把某些参数放在请求头中.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具/wps激活码.md"
+                "file": "HTTP/为什么把某些参数放在请求头中.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "d28c68fed1213385",
   "lastOpenFiles": [
+    "HTTP/Cookie概览.md",
+    "HTTP/HTTP概览.md",
+    "HTTP/http权威指南.md",
+    "HTTP/HTTPS自签证书.md",
     "工具/wps激活码.md",
     "images/20220729154150_382.png",
     "images/20200510151512758_1191904043.png",
     "images/20200317214342764_584675177.png",
     "sql/索引的本质.md",
-    "Pasted image 20220729154200.png",
-    "未整理的/vim中的正则表达式.md",
-    "2022-07-29.md",
-    "go语言学习/交叉编译.md",
-    "go语言学习/变量.md"
+    "Pasted image 20220729154200.png"
   ]
 }
