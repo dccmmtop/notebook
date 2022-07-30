@@ -9,3 +9,6 @@
 2022-07-30T23:47:40.863+0800	[34mINFO[0m	utils/github.go:161	更新成功，github_Action使用小计
 2022-07-30T23:55:13.987+0800	[34mINFO[0m	utils/github.go:144	仓库中已存在博客，更新: github_Action使用小计
 2022-07-30T23:55:15.931+0800	[34mINFO[0m	utils/github.go:161	更新成功，github_Action使用小计
+2022-07-31T00:00:40.132+0800	[31mERROR[0m	utils/parse.go:102	read file failed open F:\notebook\github_action使用小计.md: The system cannot find the file specified.
+
+2022-07-31T00:00:40.132+0800	[34mINFO[0m	utils/github.go:224	转换blog错误, 标题格式错误

@@ -1,5 +1,5 @@
 ---
-title: github_Action使用小计
+title: github_Action使用
 date: 2022-07-30 23:01:00
 tags: [git]
 ---
