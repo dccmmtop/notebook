@@ -1,7 +1,7 @@
 ---
-title: github action使用小计
+title: github_Action使用小计
 date: 2022-07-30 23:01:00
-tags: [github]
+tags: [git]
 ---
 
 ### 需求
