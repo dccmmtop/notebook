@@ -60,4 +60,4 @@ personal_token 可以去你的github setting 中获取,记得保密
 
 ### 验证
 下面在main 分支上推送一次代码，可以在github action  标签页下看到action 运行成功的标识，以及日志:
-![](images/Pasted%20image%2020220730233650.png)
+![](../images/Pasted%20image%2020220730233650.png)
