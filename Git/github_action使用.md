@@ -56,7 +56,7 @@ jobs: # 要执行的任务，可以时多个
         publish_branch: master # 发布到哪个branch
 ```
 
-personal_token 可以去你的github setting 中获取,记得保密
+personal_token 可以去你的github setting 中获取,记得保密.
 
 ### 验证
 下面在main 分支上推送一次代码，可以在github action  标签页下看到action 运行成功的标识，以及日志:
