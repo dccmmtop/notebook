@@ -3,3 +3,5 @@
 2022-07-29T16:24:52.976+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: HTTP概览
 2022-07-29T16:24:54.764+0800	[34mINFO[0m	utils/github.go:214	转换blog错误, 标题格式错误
 2022-07-29T16:24:55.262+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: 为什么把某些参数放在请求头中
+2022-07-30T23:41:40.618+0800	[34mINFO[0m	utils/github.go:144	仓库中已存在博客，更新: github_Action使用小计
+2022-07-30T23:41:42.468+0800	[34mINFO[0m	utils/github.go:161	更新成功，github_Action使用小计
