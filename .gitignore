@@ -2,3 +2,4 @@ VNote-2.8.*
 *.md.vswp
 work/*
 .trash/*
+hidden/*

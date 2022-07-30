@@ -1,4 +1,8 @@
 [
   "various-complements",
-  "oz-clear-unused-images"
+  "oz-clear-unused-images",
+  "obsidian-hypothesis-plugin",
+  "obsidian-weread-plugin",
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-vimrc-support"
 ]
