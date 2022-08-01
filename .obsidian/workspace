@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sql/Ubuntu安装mysql及配置远程访问.md",
+            "file": "sql/基准测试.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sql/Ubuntu安装mysql及配置远程访问.md",
+                "file": "sql/基准测试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sql/Ubuntu安装mysql及配置远程访问.md",
+                "file": "sql/基准测试.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sql/Ubuntu安装mysql及配置远程访问.md"
+                "file": "sql/基准测试.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "6a29701e073cf04f",
   "lastOpenFiles": [
+    "sql/Ubuntu安装mysql及配置远程访问.md",
     "sql/SQL优化.md",
     "sql/mysql中的字符集.md",
     "sql/mysql中的查询缓存.md",
@@ -170,7 +171,6 @@
     "sql/MySQL隔离级别.md",
     "sql/MySQL_Integer类型长度.md",
     "sql/Explain详解.md",
-    "sql/count(1)与count(x)的区别.md",
-    "sql/性能分析.md"
+    "sql/count(1)与count(x)的区别.md"
   ]
 }
