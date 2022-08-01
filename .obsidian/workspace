@@ -9,9 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "未整理的/blog.md",
+            "file": "sql/索引的本质.md",
             "mode": "source",
             "source": false
+          }
+        }
+      },
+      {
+        "id": "20ae03b56c29b0ae",
+        "type": "leaf",
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "images/Pasted image 20220731183304.png"
           }
         }
       }
@@ -40,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "blog.md",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,8 +67,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未整理的/blog.md",
+                "file": "sql/索引的本质.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未整理的/blog.md",
+                "file": "sql/索引的本质.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未整理的/blog.md"
+                "file": "sql/索引的本质.md"
               }
             }
           }
@@ -163,15 +172,15 @@
   },
   "active": "6a29701e073cf04f",
   "lastOpenFiles": [
+    "images/Pasted image 20220731183304.png",
+    "sql/索引的本质.md",
+    "sql/Explain详解.md",
+    "sql/性能分析.md",
+    "未整理的/blog.md",
     "template/blog.md",
     "未整理的/push_blog.md",
-    "未整理的/blog.md",
-    "sql/Explain详解.md",
-    "sql/索引的本质.md",
     "sql/_v_images/20200610224843301_528496812.png",
     "sql/_v_images/20200610225010108_1540906570.png",
-    "().md",
-    "Git/github_action使用.md",
-    "images/Pasted image 20220730235459.png"
+    "().md"
   ]
 }
