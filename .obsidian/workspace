@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sql/索引的本质.md",
-            "mode": "source",
+            "file": "sql/Explain详解.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -77,14 +77,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sql/索引的本质.md",
+                "file": "sql/Explain详解.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sql/索引的本质.md",
+                "file": "sql/Explain详解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sql/索引的本质.md"
+                "file": "sql/Explain详解.md"
               }
             }
           }
@@ -162,15 +162,15 @@
   },
   "active": "6a29701e073cf04f",
   "lastOpenFiles": [
+    "sql/索引的本质.md",
+    "sql/_v_images/20200610224843301_528496812.png",
+    "sql/_v_images/20200610225010108_1540906570.png",
+    "template/blog.md",
+    "sql/Explain详解.md",
+    "().md",
     "Git/github_action使用.md",
     "images/Pasted image 20220730235459.png",
     "hidden/Hypothesis.md.md",
-    "hypothesis/Obsidian模板插件有此一个足矣！.md",
-    "vue/_v_images/20200216161225312_11613.png",
-    "vue/_v_images/20200216161337850_31484.png",
-    "vue/_v_images/20200215184526456_27898.png",
-    "vue/_v_images/20200215140854214_21720.png",
-    "sql/mysql中的查询缓存.md",
-    "sql/MySQL外键约束.md"
+    "hypothesis/Obsidian模板插件有此一个足矣！.md"
   ]
 }

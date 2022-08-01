@@ -3,6 +3,7 @@
   "oz-clear-unused-images",
   "obsidian-hypothesis-plugin",
   "obsidian-weread-plugin",
+  "obsidian-vimrc-support",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-vimrc-support"
+  "cm-typewriter-scroll-obsidian"
 ]

@@ -114,6 +114,134 @@
           "lastUpdated": 1659277862279
         }
       }
+    },
+    "actor": {
+      "actor": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659320024122
+        }
+      }
+    },
+    "film_actor": {
+      "film_actor": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659320085746
+        }
+      }
+    },
+    "actor_id": {
+      "actor_id": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659320108821
+        }
+      }
+    },
+    "PRIMARY": {
+      "PRIMARY": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659320617341
+        }
+      }
+    },
+    "primary：复杂查询中最外层的": {
+      "primary：复杂查询中最外层的": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659320622840
+        }
+      }
+    },
+    "subquery：包含在": {
+      "subquery：包含在": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659320631085
+        }
+      }
+    },
+    "derived：包含在": {
+      "derived：包含在": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659320636223
+        }
+      }
+    },
+    "union": {
+      "union": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659321098505
+        }
+      }
+    },
+    "eq_ref": {
+      "eq_ref": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659322755168
+        }
+      }
+    },
+    "index": {
+      "index": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1659323307893
+        }
+      }
+    },
+    "ALL：即全表扫描，扫描你的聚簇索引的所有叶子节点。通常情况下这需要增加索引来进行优化了。": {
+      "ALL：即全表扫描，扫描你的聚簇索引的所有叶子节点。通常情况下这需要增加索引来进行优化了。": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659323352929
+        }
+      }
+    },
+    "where": {
+      "where": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659325149211
+        }
+      }
+    },
+    "condition：查询的列不完全被索引覆盖，where条件中是一个前导列的范围；": {
+      "condition：查询的列不完全被索引覆盖，where条件中是一个前导列的范围；": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659325295301
+        }
+      }
+    },
+    "temporary：mysql需要创建一张临时表来处理查询。出现这种情况一般是要进行优化的，首先是想到用索": {
+      "temporary：mysql需要创建一张临时表来处理查询。出现这种情况一般是要进行优化的，首先是想到用索": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659325361657
+        }
+      }
+    },
+    "employees": {
+      "employees": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659337050360
+        }
+      }
+    },
+    "是范围查询，": {
+      "是范围查询，": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659341010457
+        }
+      }
     }
   }
 }
