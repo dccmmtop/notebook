@@ -1,11 +1,16 @@
-# MySQL Integer类型与INT(11)
+---
+title: MySQL Integer类型与INT(11)
+date: 2022-04-01 23:28:49
+tags: [MySQL]
+---
+
 ## 1.介绍
 Integer类型，即整数类型，MySQL支持的整数类型有TINYINT、SMALLINT、MEDIUMINT、INT、BIGINT。
 
 ### 1.1 空间和范围
 每种整数类型所需的存储空间和范围如下：
-![](../images/20210310085452413_20052.png =866x)
 
+![](../images/Pasted%20image%2020220801232818.png)
 
 ## 2. INT(11)
 ### 2.1 数字是否限制长度？

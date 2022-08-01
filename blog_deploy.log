@@ -22,3 +22,11 @@
 2022-08-01T16:38:26.627+0800	[31mERROR[0m	utils/github.go:204	转换blog错误,file: F:\notebook\().md， 标题格式错误
 2022-08-01T16:38:30.615+0800	[34mINFO[0m	utils/github.go:214	转换blog错误, 日期格式错误
 2022-08-01T16:39:00.569+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: Explain详解
+2022-08-01T23:31:59.282+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: MySQL外键约束
+2022-08-01T23:32:01.892+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: MySQL隔离级别
+2022-08-01T23:32:04.383+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: SQL优化
+2022-08-01T23:32:07.223+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: Ubuntu 安装 mysql 及配置远程访问
+2022-08-01T23:32:09.836+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: count(1)与count(x)的区别
+2022-08-01T23:32:12.542+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: mysql中的字符集
+2022-08-01T23:32:15.071+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: mysql中的查询缓存
+2022-08-01T23:32:18.249+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: 基准测试

@@ -1,6 +1,6 @@
 ---
 title: count(1)与count(x)的区别
-tags: [mysql]
+tags: [MySQL]
 date: 2021-08-15 10:41:01
 ---
 ## count(1) and count(*)

@@ -1,7 +1,7 @@
 ---
 title: mysql中的字符集
 date: 2022-04-13 00:22:41
-tags: [mysql]
+tags: [MySQL]
 ---
 
 ## 什么是字符集，什么是排序规则

@@ -9,19 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sql/索引的本质.md",
+            "file": "sql/Ubuntu安装mysql及配置远程访问.md",
             "mode": "source",
             "source": false
-          }
-        }
-      },
-      {
-        "id": "20ae03b56c29b0ae",
-        "type": "leaf",
-        "state": {
-          "type": "image",
-          "state": {
-            "file": "images/Pasted image 20220731183304.png"
           }
         }
       }
@@ -87,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sql/索引的本质.md",
+                "file": "sql/Ubuntu安装mysql及配置远程访问.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sql/索引的本质.md",
+                "file": "sql/Ubuntu安装mysql及配置远程访问.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sql/索引的本质.md"
+                "file": "sql/Ubuntu安装mysql及配置远程访问.md"
               }
             }
           }
@@ -172,15 +162,15 @@
   },
   "active": "6a29701e073cf04f",
   "lastOpenFiles": [
-    "images/Pasted image 20220731183304.png",
-    "sql/索引的本质.md",
+    "sql/SQL优化.md",
+    "sql/mysql中的字符集.md",
+    "sql/mysql中的查询缓存.md",
+    "sql/MySQL外键约束.md",
+    "sql/MySQL内部结构.md",
+    "sql/MySQL隔离级别.md",
+    "sql/MySQL_Integer类型长度.md",
     "sql/Explain详解.md",
-    "sql/性能分析.md",
-    "未整理的/blog.md",
-    "template/blog.md",
-    "未整理的/push_blog.md",
-    "sql/_v_images/20200610224843301_528496812.png",
-    "sql/_v_images/20200610225010108_1540906570.png",
-    "().md"
+    "sql/count(1)与count(x)的区别.md",
+    "sql/性能分析.md"
   ]
 }

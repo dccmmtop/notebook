@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 安装 mysql 及配置远程访问
-tags: [mysql]
+tags: [MySQL]
 date: 2021-08-10 18:12:14
 ---
 

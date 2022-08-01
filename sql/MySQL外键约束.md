@@ -1,7 +1,7 @@
 ---
 title: MySQL外键约束
 date: 2022-04-06 23:09:21
-tags: [mysql]
+tags: [MySQL]
 ---
 
 InnoDB 是MySQL中唯一支持外键约束的内置引擎
