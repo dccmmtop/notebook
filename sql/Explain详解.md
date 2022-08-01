@@ -1,5 +1,5 @@
 ---
-title:  Explain详解
+title: Explain详解
 date: 2022-08-01 10:05:55
 tags: [MySQL]
 ---
