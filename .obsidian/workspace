@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sql/Explain详解.md",
+            "file": "未整理的/blog.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "blog.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sql/Explain详解.md",
+                "file": "未整理的/blog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sql/Explain详解.md",
+                "file": "未整理的/blog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sql/Explain详解.md"
+                "file": "未整理的/blog.md"
               }
             }
           }
@@ -162,15 +163,15 @@
   },
   "active": "6a29701e073cf04f",
   "lastOpenFiles": [
+    "template/blog.md",
+    "未整理的/push_blog.md",
+    "未整理的/blog.md",
+    "sql/Explain详解.md",
     "sql/索引的本质.md",
     "sql/_v_images/20200610224843301_528496812.png",
     "sql/_v_images/20200610225010108_1540906570.png",
-    "template/blog.md",
-    "sql/Explain详解.md",
     "().md",
     "Git/github_action使用.md",
-    "images/Pasted image 20220730235459.png",
-    "hidden/Hypothesis.md.md",
-    "hypothesis/Obsidian模板插件有此一个足矣！.md"
+    "images/Pasted image 20220730235459.png"
   ]
 }

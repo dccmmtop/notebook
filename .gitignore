@@ -3,3 +3,5 @@ VNote-2.8.*
 work/*
 .trash/*
 hidden/*
+template/*
+.obsidian/workspace
