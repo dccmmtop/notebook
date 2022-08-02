@@ -129,4 +129,86 @@ select * from test where id=10;
 
 ## bin_log 的使用
 
-...
+经常听到删库跑路的消息，其实删除库之后也不用跑路，MySQL 会把我们执行的每条SQL都记录到 bin-log中， 那么什么是 bin-log 呢？
+
+binlog是Server层实现的二进制日志,他会记录我们的cud操作。Binlog有以下几个特点：
+
+1. Binlog在MySQL的Server层实现（引擎共用）
+2. Binlog为逻辑日志,记录的是一条语句的原始逻辑
+3. Binlog不限大小,追加写入,不会覆盖以前的日志
+
+ 如果，我们误删了数据库,可以使用binlog进行归档!要使用binlog归档，首先我们得记录binlog，因此需要先开启MySQL的binlog功能。
+ 
+### 配置my.cnf
+```cnf
+log-bin=/usr/local/mysql/data/binlog/mysql-bin 
+
+# 注意5.7以及更高版本需要配置本项：（自定义,保证唯一性)
+# server-id=123454
+#binlog格式，有3种statement,row,mixed 
+binlog-format=ROW 
+
+#表示每1次执行写入就与硬盘同步，会影响性能，为0时表示，事务提交时mysql不做刷盘操作，由系统决定
+sync-binlog=1
+```
+
+### binlog命令
+
+查看bin-log是否开启
+
+```shell
+ show variables like '%log_bin%';
+```
+ 
+会多一个最新的bin-log日志
+```shell
+ flush logs;
+```
+
+ 查看最后一个bin-log日志的相关信息
+```shell
+show master status;
+```
+
+ 清空所有的bin-log日志
+```shell
+reset master;
+```
+
+查看binlog内容
+
+```shell
+/usr/local/mysql/bin/mysqlbinlog --no-defaults /usr/local/mysql/data/binlog/mysql-bin.000001
+```
+
+### 数据恢复
+
+#### 恢复全部数据
+```shell
+/usr/local/mysql/bin/mysqlbinlog --no-defaults /usr/local/mysql/data/binlog/mysql-bin.000001 |mysql -uroot -p test # test 是数据库名
+```
+#### 恢复指定时间段数据
+
+```shell
+/usr/local/mysql/bin/mysqlbinlog --no-defaults /usr/local/mysql/data/binlog/mysql-bin.000001 --stop-date= "2018-03-02 12:00:00"  --start-date= "2019-03-02 11:55:00"|mysql -uroot -p test
+```
+
+### 恢复指定位置数据
+
+```shell
+/usr/local/mysql/bin/mysqlbinlog --no-defaults --start-position="408" --stop-position="731"  /usr/local/mysql/data/binlog/mysql-bin.000001 |mysql -uroot -p test
+```
+
+--start-position  = "408" --start-position  = ''731"
+
+怎么找到呢？
+
+我们需要使用工具查看bin-log信息:
+
+```shell
+/usr/local/mysql/bin/mysqlbinlog --no-defaults /usr/local/mysql/data/binlog/mysql-bin.000001 --stop-date= "2018-03-02 12:00:00"  --start-date= "2019-03-02 11:55:00"|mysql -uroot -p test
+```
+信息如下:
+![](../images/Pasted%20image%2020220802112217.png)
+
+由此便可以恢复指定位置或日期的数据了
