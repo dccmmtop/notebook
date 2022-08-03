@@ -35,3 +35,5 @@
 2022-08-02T11:32:31.270+0800	[34mINFO[0m	utils/github.go:161	更新成功，MySQL内部结构
 2022-08-03T09:00:57.461+0800	[34mINFO[0m	utils/github.go:144	仓库中已存在博客，更新: 索引的本质
 2022-08-03T09:00:59.597+0800	[31mERROR[0m	utils/github.go:157	更新 issue 失败, title: 索引的本质, error: PATCH https://api.github.com/repos/dccmmtop/notebook/issues/46: 422 Validation Failed [{Resource:Label Field:name Code:invalid Message:}]
+2022-08-03T09:01:24.214+0800	[34mINFO[0m	utils/github.go:144	仓库中已存在博客，更新: 索引的本质
+2022-08-03T09:01:26.956+0800	[34mINFO[0m	utils/github.go:161	更新成功，索引的本质
