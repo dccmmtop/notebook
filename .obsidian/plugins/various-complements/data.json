@@ -230,8 +230,8 @@
     "employees": {
       "employees": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659337050360
+          "count": 4,
+          "lastUpdated": 1659516973525
         }
       }
     },
@@ -254,8 +254,8 @@
     "MySQL": {
       "MySQL": {
         "frontMatter": {
-          "count": 10,
-          "lastUpdated": 1659367887226
+          "count": 11,
+          "lastUpdated": 1659510246446
         }
       }
     },
@@ -264,6 +264,62 @@
         "currentFile": {
           "count": 2,
           "lastUpdated": 1659409906017
+        }
+      }
+    },
+    "position": {
+      "position": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1659516865804
+        }
+      }
+    },
+    "全表扫描o": {
+      "全表扫描o": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659512062965
+        }
+      }
+    },
+    "SELECT": {
+      "SELECT": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659512311387
+        }
+      }
+    },
+    "单路排序模式；": {
+      "单路排序模式；": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659515062987
+        }
+      }
+    },
+    "双路排序（又叫回表排序模式）：是首先根据相应的条件取出相应的排序字段和可以直接定位行数据的行": {
+      "双路排序（又叫回表排序模式）：是首先根据相应的条件取出相应的排序字段和可以直接定位行数据的行": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659515077040
+        }
+      }
+    },
+    "无法利用索引排序": {
+      "无法利用索引排序": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1659517037119
+        }
+      }
+    },
+    "2021-08-10 17:10:57": {
+      "2021-08-10 17:10:57": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1659517831832
         }
       }
     }
