@@ -2,5 +2,6 @@
   "vimMode": true,
   "useMarkdownLinks": true,
   "attachmentFolderPath": "images",
-  "newLinkFormat": "relative"
+  "newLinkFormat": "relative",
+  "promptDelete": false
 }
