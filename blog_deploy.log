@@ -129,3 +129,6 @@
 2022-08-05T09:53:56.940+0800	[34mINFO[0m	utils/github.go:224	转换blog错误, 标题格式错误
 2022-08-06T16:12:35.975+0800	[34mINFO[0m	utils/github.go:144	仓库中已存在博客，更新: 索引优化
 2022-08-06T16:12:39.028+0800	[34mINFO[0m	utils/github.go:161	更新成功，索引优化
+2022-08-06T18:26:06.258+0800	[31mERROR[0m	utils/parse.go:105	read file failed open F:\notebook\sql\MySQL事务.md: The system cannot find the file specified.
+
+2022-08-06T18:26:06.258+0800	[34mINFO[0m	utils/github.go:224	转换blog错误, 标题格式错误
