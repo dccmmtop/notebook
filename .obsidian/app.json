@@ -3,5 +3,6 @@
   "useMarkdownLinks": true,
   "attachmentFolderPath": "images",
   "newLinkFormat": "relative",
-  "promptDelete": false
+  "promptDelete": false,
+  "fileSortOrder": "byModifiedTime"
 }
