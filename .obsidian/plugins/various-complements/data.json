@@ -254,8 +254,8 @@
     "MySQL": {
       "MySQL": {
         "frontMatter": {
-          "count": 12,
-          "lastUpdated": 1659840499938
+          "count": 13,
+          "lastUpdated": 1659863811483
         }
       }
     },
@@ -408,6 +408,14 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1659842740235
+        }
+      }
+    },
+    "log中加载数据到Buffer，然后在合适的时机写入磁盘。": {
+      "log中加载数据到Buffer，然后在合适的时机写入磁盘。": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1659868304791
         }
       }
     }
