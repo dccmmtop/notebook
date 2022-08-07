@@ -134,3 +134,6 @@
 2022-08-06T18:26:06.258+0800	[34mINFO[0m	utils/github.go:224	转换blog错误, 标题格式错误
 2022-08-07T18:36:04.989+0800	[34mINFO[0m	utils/github.go:144	仓库中已存在博客，更新: MVCC实现原理
 2022-08-07T18:36:07.237+0800	[34mINFO[0m	utils/github.go:161	更新成功，MVCC实现原理
+2022-08-07T20:57:16.997+0800	[34mINFO[0m	utils/github.go:214	转换blog错误, 标题格式错误
+2022-08-07T20:57:16.999+0800	[34mINFO[0m	utils/github.go:214	转换blog错误, 标题格式错误
+2022-08-07T20:57:17.000+0800	[34mINFO[0m	utils/github.go:214	转换blog错误, 标题格式错误
