@@ -434,6 +434,86 @@
           "lastUpdated": 1659876931064
         }
       }
+    },
+    "AppCLassLoader": {
+      "AppCLassLoader": {
+        "currentFile": {
+          "count": 19,
+          "lastUpdated": 1660476370834
+        }
+      }
+    },
+    "Launcher": {
+      "Launcher": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1660470413531
+        }
+      }
+    },
+    "getLauncher": {
+      "getLauncher": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1660467681881
+        }
+      }
+    },
+    "ExtClassLoader": {
+      "ExtClassLoader": {
+        "currentFile": {
+          "count": 16,
+          "lastUpdated": 1660476342958
+        }
+      }
+    },
+    "getAppClassLoader": {
+      "getAppClassLoader": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1660473907259
+        }
+      }
+    },
+    "getClassLoader": {
+      "getClassLoader": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1660470446245
+        }
+      }
+    },
+    "ClassLoader": {
+      "ClassLoader": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1660470646786
+        }
+      }
+    },
+    "findLoadedClass": {
+      "findLoadedClass": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1660471942687
+        }
+      }
+    },
+    "findBootstrapClassOrNull": {
+      "findBootstrapClassOrNull": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1660472563708
+        }
+      }
+    },
+    "BootStrapClassLoader": {
+      "BootStrapClassLoader": {
+        "currentFile": {
+          "count": 4,
+          "lastUpdated": 1660476353787
+        }
+      }
     }
   }
 }

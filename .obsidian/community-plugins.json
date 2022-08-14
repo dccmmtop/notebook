@@ -5,5 +5,6 @@
   "obsidian-weread-plugin",
   "obsidian-vimrc-support",
   "cm-editor-syntax-highlight-obsidian",
-  "cm-typewriter-scroll-obsidian"
+  "cm-typewriter-scroll-obsidian",
+  "obsidian-code-block-enhancer"
 ]

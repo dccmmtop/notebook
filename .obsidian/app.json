@@ -4,5 +4,6 @@
   "attachmentFolderPath": "images",
   "newLinkFormat": "relative",
   "promptDelete": false,
-  "fileSortOrder": "byModifiedTime"
+  "fileSortOrder": "byModifiedTime",
+  "showLineNumber": false
 }

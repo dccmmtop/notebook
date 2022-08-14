@@ -1,5 +1,5 @@
 ---
-title: MySQL中的BufferPoll与RedoLog的作用
+title: MySQL中的BufferPool与RedoLog的作用
 date: 2022-08-07 17:16:46
 tags: [MySQL]
 ---
