@@ -138,3 +138,5 @@
 2022-08-07T20:57:16.999+0800	[34mINFO[0m	utils/github.go:214	转换blog错误, 标题格式错误
 2022-08-07T20:57:17.000+0800	[34mINFO[0m	utils/github.go:214	转换blog错误, 标题格式错误
 2022-08-14T19:39:49.463+0800	[34mINFO[0m	utils/github.go:140	仓库中未发现博客，新增: MySQL中的BufferPool与RedoLog的作用
+2022-08-14T19:43:01.034+0800	[34mINFO[0m	utils/github.go:144	仓库中已存在博客，更新: java中的类加载器和双亲委派机制
+2022-08-14T19:43:03.484+0800	[34mINFO[0m	utils/github.go:161	更新成功，java中的类加载器和双亲委派机制
