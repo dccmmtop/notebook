@@ -1,0 +1,4 @@
+.theme-light code, .theme-light pre {
+    white-space: pre;
+    overflow-x:auto;
+}

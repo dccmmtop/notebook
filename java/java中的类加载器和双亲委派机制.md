@@ -264,6 +264,146 @@ C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jd
 所依赖及引用的类也由这个ClassLoder载入
 
 ## 自定义类加载器
-待续...
+从上述源码的描述可知，类加载器的核心方法是 findClass , 和 defineClass 。 
+
+defindClass 将class文件从磁盘加载文件到内存，defineClass 开始解析class文件:
+![](../images/Pasted%20image%2020220816223452.png)
+
+所以自定义类加载器只需继承 ClassLoader，然后从写 findClass 文件就行了：
+
+目录如下:
+![](../images/Pasted%20image%2020220816225530.png)
+
+App.java: 
+
+```java
+import java.io.FileInputStream;
+import java.lang.reflect.Method;
+
+public class App {
+    static class MyClassLoader extends ClassLoader {
+        private String classPath;
+
+        public MyClassLoader(String classPath) {
+            this.classPath = classPath;
+        }
+
+        // 从磁盘加载文件
+        private byte[] loadByte(String name) throws Exception {
+            name = name.replaceAll("\\.", "/");
+            FileInputStream fis = new FileInputStream(classPath + "/" + name + ".class");
+            int len = fis.available();
+            byte[] data = new byte[len];
+            fis.read(data);
+            fis.close();
+            return data;
+        }
+
+        // 重写
+        protected Class<?> findClass(String name) throws ClassNotFoundException {
+            try {
+                byte[] data = loadByte(name);
+                // defineClass将一个字节数组转为Class对象，这个字节数组是class文件读取后最终的字节 数组。
+                return defieClass(name, data, 0, data.length);
+            } catch (Exception e) {
+                e.printStackTrace();
+                throw new ClassNotFoundException();
+            }
+        }
+    }
+
+    public static void main(String args[]) throws Exception {
+        // 初始化自定义类加载器，会先初始化父类ClassLoader，其中会把自定义类加载器的父加载 器设置为应用程序类加载器AppClassLoader
+        MyClassLoader classLoader = new MyClassLoader("D:/dc_code/java"); // D盘创建
+        // 创建 io/dc 几级目录，将User类的复制类User.class丢入该目录
+        Class clazz = classLoader.loadClass("io.dc.User");
+        Object obj = clazz.newInstance();
+        // 使用反射调用 User 类的 sout 方法
+        Method method = clazz.getDeclaredMethod("sout", null);
+        method.invoke(obj, null);
+        System.out.println(clazz.getClassLoader().getClass().getName());
+    }
+}
+```
 ## 打破双亲委派机制
-待续...
+
+经过上面的源码分析发现，主要是 `ClassLoader` 类中的`laodClass` 方法来实现的双亲委派机制，自己不加载而是先让其父加载。
+
+所以直接复写 loadClass 方法即可，不再指定父级加载，当前类直接加载，如下:
+
+```java
+import java.io.FileInputStream;
+import java.lang.reflect.Method;
+
+public class App {
+    static class MyClassLoader extends ClassLoader {
+        private String classPath;
+
+        public MyClassLoader(String classPath) {
+            this.classPath = classPath;
+        }
+
+        // 从磁盘加载文件
+        private byte[] loadByte(String name) throws Exception {
+            name = name.replaceAll("\\.", "/");
+            FileInputStream fis = new FileInputStream(classPath + "/" + name + ".class");
+            int len = fis.available();
+            byte[] data = new byte[len];
+            fis.read(data);
+            fis.close();
+            return data;
+        }
+
+        protected Class<?> findClass(String name) throws ClassNotFoundException {
+            try {
+                byte[] data = loadByte(name);
+                // defineClass将一个字节数组转为Class对象，这个字节数组是class文件读取后最终的字节 数组。
+                return defineClass(name, data, 0, data.length);
+            } catch (Exception e) {
+                e.printStackTrace();
+                throw new ClassNotFoundException();
+            }
+        }
+
+        protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
+
+            synchronized (getClassLoadingLock(name)) {
+                // First, check if the class has already been loaded
+                Class<?> c = findLoadedClass(name);
+                if (c == null) {
+                    // If still not found, then invoke findClass in order
+                    // to find the class.
+                    long t1 = System.nanoTime();
+                    if (name.startsWith("io.dc")) {
+                        // 直接查找, 限定包名
+                        c = findClass(name);
+                    } else {
+                        // 其他包中的类还是使用双亲委派机制
+                        // 否则会报找不到 Object 类
+                        c = this.getParent().loadClass(name);
+                    }
+                    // this is the defining class loader; record the stats
+                    sun.misc.PerfCounter.getFindClassTime().addElapsedTimeFrom(t1);
+                    sun.misc.PerfCounter.getFindClasses().increment();
+                }
+                if (resolve) {
+                    resolveClass(c);
+                }
+                return c;
+            }
+        }
+    }
+
+    public static void main(String args[]) throws Exception {
+        // 初始化自定义类加载器，会先初始化父类ClassLoader，其中会把自定义类加载器的父加载 器设置为应用程序类加载器AppClassLoader
+        MyClassLoader classLoader = new MyClassLoader("D:/dc_code/java"); // D盘创建
+        // 创建 io/dc 几级目录，将User类的复制类User.class丢入该目录
+        Class clazz = classLoader.loadClass("io.dc.User");
+        Object obj = clazz.newInstance();
+        // 使用反射调用 User 类的 sout 方法
+        Method method = clazz.getDeclaredMethod("sout", null);
+        method.invoke(obj, null);
+        System.out.println(clazz.getClassLoader().getClass().getName());
+    }
+}
+```

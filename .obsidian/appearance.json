@@ -2,5 +2,8 @@
   "theme": "obsidian",
   "cssTheme": "Blue Topaz",
   "translucency": false,
-  "baseFontSize": 15
+  "baseFontSize": 16,
+  "enabledCssSnippets": [],
+  "monospaceFontFamily": "Hack",
+  "textFontFamily": "宋体"
 }
