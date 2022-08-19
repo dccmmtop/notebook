@@ -408,3 +408,147 @@ public class App {
     }
 }
 ```
+
+## Tomcat 中的类加载方式
+### 为什么Tomcat 需要打破双亲委派机制
+1. tomcat 是一个web容器。可以同时运行多个web服务，每个服务可能会依赖同一个类的不同版本，例如 服务A 依赖 Spring 2.1.1 服务B 依赖 Spring 2.2.2 ,服务A B 所依赖的包名 +  类名肯定有一样的。但是我们知道在双亲委派机制中不能同时存在报名和类名一样的class文件。此时就需要打破
+2. web容器也有自己依赖的类库，不能与应用程序的类库混淆。基于安全考虑，应该让容器的   类库和程序的类库隔离开来。
+3. web容器要支持jsp的修改，我们知道，jsp 文件最终也是要编译成class文件才能在虚拟机中   运行，但程序运行后修改jsp已经是司空见惯的事情， web容器需要支持 jsp 修改后不用重启。如果使用双亲委派机制，同一个类加载过一次就不会再次加载了。很显然不能支持热加载功能。tomcat 把每一个jsp class 文件都用一个单独的加载器去加载。如果检测到 jsp 文件发生变动，直接将现有的 jsp 对应的类加载器卸载掉，重新生成一个新的加载器去加载。
+
+### 模仿tomcat 实现多版本共存
+
+用一个简单的demo来实现 tomcat 多版本共存功能:
+
+有两个报名和类名一样的 User 类:
+![](../images/Pasted%20image%2020220819180830.png)
+
+java1 -> User.java :
+
+```java
+package io.dc;
+public class User{
+    public void sout (){
+        System.out.println("user");
+    }
+    public static void main (String[] args){
+        System.out.println("user");
+
+    }
+
+}
+```
+
+java2 -> User.java
+
+```java
+package io.dc;
+
+public class User {
+    public void sout() {
+        System.out.println("user1");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("user1");
+
+    }
+
+}
+```
+
+App.java
+```java
+package io.dc;
+
+import java.io.FileInputStream;
+import java.lang.reflect.Method;
+
+public class App {
+    static class MyClassLoader extends ClassLoader {
+        private String classPath;
+
+        public MyClassLoader(String classPath) {
+            this.classPath = classPath;
+        }
+
+        // 从磁盘加载文件
+        private byte[] loadByte(String name) throws Exception {
+            name = name.replaceAll("\\.", "/");
+            FileInputStream fis = new FileInputStream(classPath + "/" + name + ".class");
+            int len = fis.available();
+            byte[] data = new byte[len];
+            fis.read(data);
+            fis.close();
+            return data;
+        }
+
+        protected Class<?> findClass(String name) throws ClassNotFoundException {
+            try {
+                byte[] data = loadByte(name);
+                // defineClass将一个字节数组转为Class对象，这个字节数组是class文件读取后最终的字节 数组。
+                return defineClass(name, data, 0, data.length);
+            } catch (Exception e) {
+                e.printStackTrace();
+                throw new ClassNotFoundException();
+            }
+        }
+
+        protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
+
+            synchronized (getClassLoadingLock(name)) {
+                // First, check if the class has already been loaded
+                Class<?> c = findLoadedClass(name);
+                if (c == null) {
+                    // If still not found, then invoke findClass in order
+                    // to find the class.
+                    long t1 = System.nanoTime();
+                    if (name.startsWith("io.dc")) {
+                        // 直接查找, 限定包名
+                        c = findClass(name);
+                    } else {
+                        // 其他包中的类还是使用双亲委派机制
+                        // 否则会报找不到 Object 类
+                        c = this.getParent().loadClass(name);
+                    }
+                    // this is the defining class loader; record the stats
+                    sun.misc.PerfCounter.getFindClassTime().addElapsedTimeFrom(t1);
+                    sun.misc.PerfCounter.getFindClasses().increment();
+                }
+                if (resolve) {
+                    resolveClass(c);
+                }
+                return c;
+            }
+        }
+    }
+
+    public static void main(String args[]) throws Exception {
+        // 初始化自定义类加载器，会先初始化父类ClassLoader，其中会把自定义类加载器的父加载 器设置为应用程序类加载器AppClassLoader
+        MyClassLoader classLoader = new MyClassLoader("F:/code/java1"); // D盘创建
+        // 创建 io/dc 几级目录，将User类的复制类User.class丢入该目录
+        Class clazz = classLoader.loadClass("io.dc.User");
+        Object obj = clazz.newInstance();
+        // 使用反射调用 User 类的 sout 方法
+        Method method = clazz.getDeclaredMethod("sout", null);
+        method.invoke(obj, null);
+
+        System.out.println(clazz.getClassLoader().getClass().getName());
+
+        // 使用新的加载器加载另外一个 User.class
+        MyClassLoader classLoader1 = new MyClassLoader("F:/code/java2"); // D盘创建
+        // 创建 io/dc 几级目录，将User类的复制类User.class丢入该目录
+        Class clazz1 = classLoader1.loadClass("io.dc.User");
+        Object obj1 = clazz1.newInstance();
+        // 使用反射调用 User 类的 sout 方法
+        Method method1 = clazz1.getDeclaredMethod("sout", null);
+        method1.invoke(obj1, null);
+        System.out.println(clazz1.getClassLoader().getClass().getName());
+    }
+}
+```
+
+结果：
+![](../images/Pasted%20image%2020220819181540.png)
+
+
+所以，同一个JVM内，两个相同包名和类名的类对象可以共存，因为他们的类加载器可以不一   样，所以看两个类对象是否是同一个，除了看类的包名和类名是否都相同之外，还需要他们的类   **加载器也是同一个才能认为他们是同一个。**
