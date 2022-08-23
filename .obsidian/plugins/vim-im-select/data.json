@@ -1,0 +1,8 @@
+{
+  "defaultIM": "2052",
+  "obtainCmd": "im-select",
+  "switchCmd": "im-select {im}",
+  "windowsDefaultIM": "2052",
+  "windowsObtainCmd": "C:\\Users\\Administrator\\scoop\\shims\\im-select.EXE.exe",
+  "windowsSwitchCmd": "C:\\Users\\Administrator\\scoop\\shims\\im-select.EXE {im}"
+}

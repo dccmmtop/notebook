@@ -3,3 +3,4 @@ set clipboard=unnamed
 
 nmap H ^
 nmap L $
+imap jk <Esc>

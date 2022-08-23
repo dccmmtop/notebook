@@ -4,5 +4,6 @@
   "obsidian-vimrc-support",
   "cm-editor-syntax-highlight-obsidian",
   "cm-typewriter-scroll-obsidian",
-  "obsidian-code-block-enhancer"
+  "obsidian-code-block-enhancer",
+  "vim-im-select"
 ]
