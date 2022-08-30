@@ -43,54 +43,6 @@
   "insertCommaAfterFrontMatterCompletion": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "ContentLength": {
-      "ContentLength": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659086931465
-        }
-      }
-    },
-    "取出1024字节数据": {
-      "取出1024字节数据": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659087033559
-        }
-      }
-    },
-    "上，完成部署。锁执行的任务就只有两步——编译和部署，zhe": {
-      "上，完成部署。锁执行的任务就只有两步——编译和部署，zhe": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659194134850
-        }
-      }
-    },
-    "personal_token": {
-      "personal_token": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659195272287
-        }
-      }
-    },
-    "分支上推送一次代码，可以ka": {
-      "分支上推送一次代码，可以ka": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659195348516
-        }
-      }
-    },
-    "action": {
-      "action": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659195354609
-        }
-      }
-    },
     "如下图所示": {
       "如下图所示": {
         "currentFile": {
@@ -520,6 +472,38 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1661128317638
+        }
+      }
+    },
+    "test2": {
+      "test2": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1661733059636
+        }
+      }
+    },
+    "survivor": {
+      "survivor": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1661854197232
+        }
+      }
+    },
+    "Survivor": {
+      "Survivor": {
+        "currentFile": {
+          "count": 7,
+          "lastUpdated": 1661854854559
+        }
+      }
+    },
+    "可以通过参数": {
+      "可以通过参数": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1661854921909
         }
       }
     }

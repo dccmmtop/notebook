@@ -149,3 +149,6 @@
 2022-08-23T17:23:45.276+0800	[34mINFO[0m	utils/github.go:141	仓库中未发现博客，新增: jvm内存模型
 2022-08-28T18:41:22.918+0800	[34mINFO[0m	utils/github.go:143	仓库中已存在博客，更新: jvm中对象的创建过程
 2022-08-28T18:41:24.787+0800	[34mINFO[0m	utils/github.go:159	更新成功，jvm中对象的创建过程
+2022-08-30T18:51:01.808+0800	[31mERROR[0m	parse/base_convert.go:60	read file failed open F:\notebook\java\jvm内存分配.md: The system cannot find the file specified.
+
+2022-08-30T18:51:02.453+0800	[31mERROR[0m	utils/github.go:101	未能找到 issue, title: 
