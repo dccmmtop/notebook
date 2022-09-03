@@ -506,6 +506,46 @@
           "lastUpdated": 1661854921909
         }
       }
+    },
+    "Scavenge收集器搭配使用，另一种用途是作为CMS收集器的后备方案。": {
+      "Scavenge收集器搭配使用，另一种用途是作为CMS收集器的后备方案。": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1662108711524
+        }
+      }
+    },
+    "Serial": {
+      "Serial": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1662109406794
+        }
+      }
+    },
+    "Parallel": {
+      "Parallel": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1662109309645
+        }
+      }
+    },
+    "Scavenge": {
+      "Scavenge": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1662108967041
+        }
+      }
+    },
+    "serial": {
+      "serial": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1662115342329
+        }
+      }
     }
   }
 }
