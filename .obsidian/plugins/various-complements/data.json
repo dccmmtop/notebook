@@ -43,347 +43,11 @@
   "insertCommaAfterFrontMatterCompletion": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "如下图所示": {
-      "如下图所示": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659272747839
-        }
-      }
-    },
-    "MyISAM": {
-      "MyISAM": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659275620057
-        }
-      }
-    },
-    "InnoDB": {
-      "InnoDB": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1659277862279
-        }
-      }
-    },
-    "actor": {
-      "actor": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659320024122
-        }
-      }
-    },
-    "film_actor": {
-      "film_actor": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659320085746
-        }
-      }
-    },
-    "actor_id": {
-      "actor_id": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659320108821
-        }
-      }
-    },
-    "PRIMARY": {
-      "PRIMARY": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659320617341
-        }
-      }
-    },
-    "primary：复杂查询中最外层的": {
-      "primary：复杂查询中最外层的": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659320622840
-        }
-      }
-    },
-    "subquery：包含在": {
-      "subquery：包含在": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659320631085
-        }
-      }
-    },
-    "derived：包含在": {
-      "derived：包含在": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659320636223
-        }
-      }
-    },
-    "union": {
-      "union": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659321098505
-        }
-      }
-    },
-    "eq_ref": {
-      "eq_ref": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659322755168
-        }
-      }
-    },
-    "index": {
-      "index": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1659323307893
-        }
-      }
-    },
-    "ALL：即全表扫描，扫描你的聚簇索引的所有叶子节点。通常情况下这需要增加索引来进行优化了。": {
-      "ALL：即全表扫描，扫描你的聚簇索引的所有叶子节点。通常情况下这需要增加索引来进行优化了。": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659323352929
-        }
-      }
-    },
-    "where": {
-      "where": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659325149211
-        }
-      }
-    },
-    "condition：查询的列不完全被索引覆盖，where条件中是一个前导列的范围；": {
-      "condition：查询的列不完全被索引覆盖，where条件中是一个前导列的范围；": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659325295301
-        }
-      }
-    },
-    "temporary：mysql需要创建一张临时表来处理查询。出现这种情况一般是要进行优化的，首先是想到用索": {
-      "temporary：mysql需要创建一张临时表来处理查询。出现这种情况一般是要进行优化的，首先是想到用索": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659325361657
-        }
-      }
-    },
-    "employees": {
-      "employees": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1659516973525
-        }
-      }
-    },
-    "是范围查询，": {
-      "是范围查询，": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659341010457
-        }
-      }
-    },
-    "主要包括连接器、查询缓存、分析器、优化器、执行器等，涵盖": {
-      "主要包括连接器、查询缓存、分析器、优化器、执行器等，涵盖": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1659366048833
-        }
-      }
-    },
-    "MySQL": {
-      "MySQL": {
-        "frontMatter": {
-          "count": 13,
-          "lastUpdated": 1659863811483
-        }
-      }
-    },
-    "--start-position": {
-      "--start-position": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1659409906017
-        }
-      }
-    },
-    "position": {
-      "position": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1659516865804
-        }
-      }
-    },
-    "全表扫描o": {
-      "全表扫描o": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659512062965
-        }
-      }
-    },
-    "SELECT": {
-      "SELECT": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659512311387
-        }
-      }
-    },
-    "单路排序模式；": {
-      "单路排序模式；": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659515062987
-        }
-      }
-    },
-    "双路排序（又叫回表排序模式）：是首先根据相应的条件取出相应的排序字段和可以直接定位行数据的行": {
-      "双路排序（又叫回表排序模式）：是首先根据相应的条件取出相应的排序字段和可以直接定位行数据的行": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659515077040
-        }
-      }
-    },
-    "无法利用索引排序": {
-      "无法利用索引排序": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659517037119
-        }
-      }
-    },
-    "2021-08-10 17:10:57": {
-      "2021-08-10 17:10:57": {
-        "frontMatter": {
-          "count": 1,
-          "lastUpdated": 1659517831832
-        }
-      }
-    },
-    "有如下查询语句": {
-      "有如下查询语句": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659752265035
-        }
-      }
-    },
-    "SQL优化": {
-      "SQL优化": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1659752755604
-        }
-      }
-    },
-    "内嵌循环连接算法": {
-      "内嵌循环连接算法": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659753095935
-        }
-      }
-    },
-    "Lock）：又称I锁，针对表锁，主要是": {
-      "Lock）：又称I锁，针对表锁，主要是": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659776756541
-        }
-      }
-    },
-    "images": {
-      "images": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659777665916
-        }
-      }
-    },
-    "employee": {
-      "employee": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1659780161639
-        }
-      }
-    },
-    "select": {
-      "select": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659780150199
-        }
-      }
-    },
-    "remove_nginx_from_ubuntu": {
-      "remove_nginx_from_ubuntu": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1659780155709
-        }
-      }
-    },
-    "来实现的，": {
-      "来实现的，": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659840660083
-        }
-      }
-    },
-    "roll_pointer": {
-      "roll_pointer": {
-        "currentFile": {
-          "count": 9,
-          "lastUpdated": 1659846773830
-        }
-      }
-    },
-    "readview": {
-      "readview": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1659842740235
-        }
-      }
-    },
-    "log中加载数据到Buffer，然后在合适的时机写入磁盘。": {
-      "log中加载数据到Buffer，然后在合适的时机写入磁盘。": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1659868304791
-        }
-      }
-    },
     "java知识点": {
       "java知识点": {
         "internalLink": {
           "count": 3,
           "lastUpdated": 1660903764824
-        }
-      }
-    },
-    "finalize": {
-      "finalize": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1659876931064
         }
       }
     },
@@ -494,8 +158,8 @@
     "Survivor": {
       "Survivor": {
         "currentFile": {
-          "count": 7,
-          "lastUpdated": 1661854854559
+          "count": 8,
+          "lastUpdated": 1662888073288
         }
       }
     },
@@ -544,6 +208,62 @@
         "currentFile": {
           "count": 2,
           "lastUpdated": 1662115342329
+        }
+      }
+    },
+    "Humongous": {
+      "Humongous": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1662884096040
+        }
+      }
+    },
+    "MaxGCPauseMillis": {
+      "MaxGCPauseMillis": {
+        "currentFile": {
+          "count": 4,
+          "lastUpdated": 1662887817550
+        }
+      }
+    },
+    "YoungGC": {
+      "YoungGC": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1662887068139
+        }
+      }
+    },
+    "G1NewSizePercent": {
+      "G1NewSizePercent": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1662887876784
+        }
+      }
+    },
+    "MaxG1NewSizePercent": {
+      "MaxG1NewSizePercent": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1662887914571
+        }
+      }
+    },
+    "Initial": {
+      "Initial": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1662888534295
+        }
+      }
+    },
+    "这使得G1在不同的场景中可以获得最佳的停顿时间和吞吐量。": {
+      "这使得G1在不同的场景中可以获得最佳的停顿时间和吞吐量。": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1662889791305
         }
       }
     }
