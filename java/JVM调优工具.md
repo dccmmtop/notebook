@@ -333,3 +333,7 @@ jstat -gcutil PID
 ### 内存泄漏的案例
 
 一般电商架构可能会使用多级缓存架构，就是redis加上JVM级缓存，大多数同学可能为了图方便对于JVM级缓存就   简单使用一个hashmap，于是不断往里面放缓存数据，但是很少考虑这个map的容量问题，结果这个缓存map越来越大，一直占用着老   年代的很多空间，时间长了就会导致full gc非常频繁，这就是一种内存泄漏，对于一些老旧数据没有及时清理导致一直占用着宝贵的内存   资源，时间长了除了导致full gc，还有可能导致OOM。   这种情况完全可以考虑采用一些成熟的JVM级缓存框架来解决，比如ehcache等自带一些LRU数据淘汰算法的框架来作为JVM级的缓存
+
+## 高级工具 Arthas 
+
+Arthas 是 Alibaba 在 2018 年 9 月开源的 Java 诊断工具。支持 JDK6+， 采用命令行交互模式，可以方便的定位和诊断  线上程序运行问题。Arthas 官方文档十分详细 https://arthas.aliyun.com/doc/manual-install.html?userCode=okjhlpr5
