@@ -51,86 +51,6 @@
         }
       }
     },
-    "AppCLassLoader": {
-      "AppCLassLoader": {
-        "currentFile": {
-          "count": 19,
-          "lastUpdated": 1660476370834
-        }
-      }
-    },
-    "Launcher": {
-      "Launcher": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1660470413531
-        }
-      }
-    },
-    "getLauncher": {
-      "getLauncher": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1660467681881
-        }
-      }
-    },
-    "ExtClassLoader": {
-      "ExtClassLoader": {
-        "currentFile": {
-          "count": 16,
-          "lastUpdated": 1660476342958
-        }
-      }
-    },
-    "getAppClassLoader": {
-      "getAppClassLoader": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1660473907259
-        }
-      }
-    },
-    "getClassLoader": {
-      "getClassLoader": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1660470446245
-        }
-      }
-    },
-    "ClassLoader": {
-      "ClassLoader": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1660470646786
-        }
-      }
-    },
-    "findLoadedClass": {
-      "findLoadedClass": {
-        "currentFile": {
-          "count": 3,
-          "lastUpdated": 1660471942687
-        }
-      }
-    },
-    "findBootstrapClassOrNull": {
-      "findBootstrapClassOrNull": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1660472563708
-        }
-      }
-    },
-    "BootStrapClassLoader": {
-      "BootStrapClassLoader": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1660476353787
-        }
-      }
-    },
     "每个线程开启的时候都会划分几块内存空间，线程栈，程序计数器，本地方法栈。这几个内存空间是依附于线程的，线程结束后，这些空间也会释放": {
       "每个线程开启的时候都会划分几块内存空间，线程栈，程序计数器，本地方法栈。这几个内存空间是依附于线程的，线程结束后，这些空间也会释放": {
         "currentFile": {
@@ -272,6 +192,30 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1662974844459
+        }
+      }
+    },
+    "volatile": {
+      "volatile": {
+        "currentFile": {
+          "count": 4,
+          "lastUpdated": 1663205508642
+        }
+      }
+    },
+    "initFlag": {
+      "initFlag": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1663205934003
+        }
+      }
+    },
+    "as-if-serial": {
+      "as-if-serial": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663289695238
         }
       }
     }
