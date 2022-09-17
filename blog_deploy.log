@@ -166,3 +166,29 @@
 2022-09-12T19:25:32.720+0800	[34mINFO[0m	utils/github.go:159	更新成功，JVM调优工具
 2022-09-17T09:41:18.561+0800	[34mINFO[0m	utils/github.go:143	仓库中已存在博客，更新: 并发编程中的可见性,原子性，有序性问题
 2022-09-17T09:41:21.220+0800	[34mINFO[0m	utils/github.go:159	更新成功，并发编程中的可见性,原子性，有序性问题
+2022-09-17T09:43:36.709+0800	[34mINFO[0m	sms/sm_parse.go:34	开始转换博客: F:\notebook\java\并发编程中的可见性,原子性，有序性问题.md
+2022-09-17T09:43:38.767+0800	[31mERROR[0m	sms/sm_parse.go:77	请求错误 Post "https://sm.ms/api/v2/upload": proxyconnect tcp: dial tcp 127.0.0.1:7890: connectex: No connection could be made because the target machine actively refused it.
+2022-09-17T09:43:38.767+0800	[31mERROR[0m	sms/sm_parse.go:83	格式化返回体错误,err: unexpected end of JSON input
+2022-09-17T09:43:38.767+0800	[31mERROR[0m	sms/sm_parse.go:64	上传图片错误, err: unexpected end of JSON input
+2022-09-17T09:43:38.768+0800	[34mINFO[0m	cmd/parse.go:51	文件写入成功, file: 1.md
+2022-09-17T09:44:00.680+0800	[34mINFO[0m	sms/sm_parse.go:34	开始转换博客: F:\notebook\java\并发编程中的可见性,原子性，有序性问题.md
+2022-09-17T09:44:02.150+0800	[31mERROR[0m	sms/sm_parse.go:77	请求错误 Post "https://sm.ms/api/v2/upload": EOF
+2022-09-17T09:44:02.151+0800	[31mERROR[0m	sms/sm_parse.go:83	格式化返回体错误,err: unexpected end of JSON input
+2022-09-17T09:44:02.151+0800	[31mERROR[0m	sms/sm_parse.go:64	上传图片错误, err: unexpected end of JSON input
+2022-09-17T09:44:02.151+0800	[34mINFO[0m	cmd/parse.go:51	文件写入成功, file: 1.md
+2022-09-17T09:44:10.986+0800	[34mINFO[0m	sms/sm_parse.go:34	开始转换博客: F:\notebook\java\并发编程中的可见性,原子性，有序性问题.md
+2022-09-17T09:44:13.288+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220915082649.png --> https://s2.loli.net/2022/09/17/GCSYnBzg5pEADLV.png
+2022-09-17T09:44:15.008+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220915083920.png --> https://s2.loli.net/2022/09/17/gciYfHtjMeXKkQW.png
+2022-09-17T09:44:15.978+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220915090631.png --> https://s2.loli.net/2022/09/17/T9IPGem4QR8rA3n.png
+2022-09-17T09:44:17.086+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220915091211.png --> https://s2.loli.net/2022/09/17/kvud7fQOoTW3F2e.png
+2022-09-17T09:44:18.190+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220915095555.png --> https://s2.loli.net/2022/09/17/cyIbOTuxZE615zj.png
+2022-09-17T09:44:19.334+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220916084801.png --> https://s2.loli.net/2022/09/17/iqDWQGMvrhV35tm.png
+2022-09-17T09:44:20.474+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220916084827.png --> https://s2.loli.net/2022/09/17/fldOZPkpmB2v3xc.png
+2022-09-17T09:44:21.592+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220916084855.png --> https://s2.loli.net/2022/09/17/jDr2EkgRob5QGI8.png
+2022-09-17T09:44:22.741+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220916084927.png --> https://s2.loli.net/2022/09/17/5AKSaGWvezbJwxX.png
+2022-09-17T09:44:23.978+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220916184429.png --> https://s2.loli.net/2022/09/17/H7RP1QWlVYxbc83.png
+2022-09-17T09:44:23.979+0800	[34mINFO[0m	sms/sm_parse.go:70	处理完成
+2022-09-17T09:44:23.980+0800	[34mINFO[0m	cmd/parse.go:51	文件写入成功, file: 1.md
+2022-09-17T10:30:03.911+0800	[31mERROR[0m	parse/base_convert.go:60	read file failed open F:\notebook\java\_v_images\java常量池.md: The system cannot find the file specified.
+
+2022-09-17T10:30:04.418+0800	[31mERROR[0m	utils/github.go:101	未能找到 issue, title: 

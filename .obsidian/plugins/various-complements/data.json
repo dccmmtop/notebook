@@ -234,6 +234,62 @@
           "lastUpdated": 1663378472124
         }
       }
+    },
+    "+PrintGCDetails": {
+      "+PrintGCDetails": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663380124859
+        }
+      }
+    },
+    "+PrintGCDateStamps": {
+      "+PrintGCDateStamps": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663380139829
+        }
+      }
+    },
+    "+PrintGCTimeStamps": {
+      "+PrintGCTimeStamps": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663380159699
+        }
+      }
+    },
+    "+PrintGCCause": {
+      "+PrintGCCause": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663380182254
+        }
+      }
+    },
+    "+UseGCLogFileRotation": {
+      "+UseGCLogFileRotation": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663380204954
+        }
+      }
+    },
+    "NumberOfGCLogFiles": {
+      "NumberOfGCLogFiles": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663380221807
+        }
+      }
+    },
+    "GCLogFileSize": {
+      "GCLogFileSize": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663380240187
+        }
+      }
     }
   }
 }
