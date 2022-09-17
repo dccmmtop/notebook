@@ -43,14 +43,6 @@
   "insertCommaAfterFrontMatterCompletion": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "java知识点": {
-      "java知识点": {
-        "internalLink": {
-          "count": 3,
-          "lastUpdated": 1660903764824
-        }
-      }
-    },
     "每个线程开启的时候都会划分几块内存空间，线程栈，程序计数器，本地方法栈。这几个内存空间是依附于线程的，线程结束后，这些空间也会释放": {
       "每个线程开启的时候都会划分几块内存空间，线程栈，程序计数器，本地方法栈。这几个内存空间是依附于线程的，线程结束后，这些空间也会释放": {
         "currentFile": {
@@ -198,8 +190,8 @@
     "volatile": {
       "volatile": {
         "currentFile": {
-          "count": 4,
-          "lastUpdated": 1663205508642
+          "count": 12,
+          "lastUpdated": 1663378328210
         }
       }
     },
@@ -216,6 +208,30 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1663289695238
+        }
+      }
+    },
+    "Singleton": {
+      "Singleton": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663377575388
+        }
+      }
+    },
+    "getInstance": {
+      "getInstance": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663377948947
+        }
+      }
+    },
+    "synchronize": {
+      "synchronize": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1663378472124
         }
       }
     }
