@@ -192,3 +192,12 @@
 2022-09-17T10:30:03.911+0800	[31mERROR[0m	parse/base_convert.go:60	read file failed open F:\notebook\java\_v_images\java常量池.md: The system cannot find the file specified.
 
 2022-09-17T10:30:04.418+0800	[31mERROR[0m	utils/github.go:101	未能找到 issue, title: 
+2022-09-17T10:30:29.286+0800	[34mINFO[0m	sms/sm_parse.go:34	开始转换博客: F:\notebook\java\GC日志详解.md
+2022-09-17T10:30:29.394+0800	[31mERROR[0m	sms/sm_parse.go:77	请求错误 Post "https://sm.ms/api/v2/upload": read tcp 127.0.0.1:1143->127.0.0.1:7890: wsarecv: An existing connection was forcibly closed by the remote host.
+2022-09-17T10:30:29.394+0800	[31mERROR[0m	sms/sm_parse.go:83	格式化返回体错误,err: unexpected end of JSON input
+2022-09-17T10:30:29.394+0800	[31mERROR[0m	sms/sm_parse.go:64	上传图片错误, err: unexpected end of JSON input
+2022-09-17T10:30:29.395+0800	[34mINFO[0m	cmd/parse.go:51	文件写入成功, file: 1.md
+2022-09-17T10:30:36.517+0800	[34mINFO[0m	sms/sm_parse.go:34	开始转换博客: F:\notebook\java\GC日志详解.md
+2022-09-17T10:30:39.139+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220917100539.png --> https://s2.loli.net/2022/09/17/pyoeaRqxM3fz76s.png
+2022-09-17T10:30:39.139+0800	[34mINFO[0m	sms/sm_parse.go:70	处理完成
+2022-09-17T10:30:39.139+0800	[34mINFO[0m	cmd/parse.go:51	文件写入成功, file: 1.md
