@@ -166,7 +166,7 @@ System.out.println(s == s.intern()) // false
 intern() 方法优先返回常量池中的地址, 常量池不存在时，再返回堆中的地址， 第一个 s1 != s1.intern() 是符合我们直觉的，因为常量池中没有 helloWorld , 但是第二个 s == s.intern() 为false 就说不通了，难道常量池已经有 `java` 这个字面量了吗？ 是的， java 这个关键词，在jvm 启动或类加载期间肯定有 `java` 这个字符串已经放入到常量池中了， s.inern() 返回的是常量池中的地址.
 
 ## 八种基本类型的包装类和对象池  
-java中基本类型的包装类的大部分都实现了常量池技术(严格来说应该叫对象池，在堆上)，这些类是   Byte,Short,Integer,Long,Character,Boolean,另外两种浮点数类型的包装类则没有实现。另外   Byte,Short,Integer,Long,Character这5种整型的包装类也只是在对应值小于等于127时才可使用对象池，也即对象不负责创建和管理大于127的这些类的对象。因为一般这种比较小的数用到的概率相对较大
+java中基本类型的包装类的大部分都实现了常量池技术(严格来说应该叫对象池，在堆上)，这些类是   Byte,Short,Integer,Long,Character,Boolean,另外两种浮点数类型的包装类则没有实现。另外   Byte,Short,Integer,Long,Character这5种整型的包装类也只是在对应值小于等于127时才可使用对象池，也即对象不负责创建和管理o大于127的这些类的对象。因为一般这种比较小的数用到的概率相对较大
 ```java
 public class Test {
 
