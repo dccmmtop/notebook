@@ -203,3 +203,8 @@
 2022-09-17T10:30:39.139+0800	[34mINFO[0m	cmd/parse.go:51	文件写入成功, file: 1.md
 2022-09-18T09:47:28.301+0800	[34mINFO[0m	utils/github.go:143	仓库中已存在博客，更新: java常量池
 2022-09-18T09:47:30.554+0800	[34mINFO[0m	utils/github.go:159	更新成功，java常量池
+2022-09-18T10:17:51.460+0800	[34mINFO[0m	sms/sm_parse.go:34	开始转换博客: F:\notebook\java\java常量池.md
+2022-09-18T10:17:54.267+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220917111234.png --> https://s2.loli.net/2022/09/18/d5I4cMJwemb1Cx6.png
+2022-09-18T10:17:55.509+0800	[34mINFO[0m	sms/sm_parse.go:67	处理图片: images/Pasted image 20220917115755.png --> https://s2.loli.net/2022/09/18/rIknpVPHQXJ13qv.png
+2022-09-18T10:17:55.510+0800	[34mINFO[0m	sms/sm_parse.go:70	处理完成
+2022-09-18T10:17:55.510+0800	[34mINFO[0m	cmd/parse.go:51	文件写入成功, file: 1.md
