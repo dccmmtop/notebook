@@ -43,43 +43,11 @@
   "insertCommaAfterFrontMatterCompletion": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "每个线程开启的时候都会划分几块内存空间，线程栈，程序计数器，本地方法栈。这几个内存空间是依附于线程的，线程结束后，这些空间也会释放": {
-      "每个线程开启的时候都会划分几块内存空间，线程栈，程序计数器，本地方法栈。这几个内存空间是依附于线程的，线程结束后，这些空间也会释放": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1661128317638
-        }
-      }
-    },
-    "test2": {
-      "test2": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1661733059636
-        }
-      }
-    },
-    "survivor": {
-      "survivor": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1661854197232
-        }
-      }
-    },
     "Survivor": {
       "Survivor": {
         "currentFile": {
           "count": 8,
           "lastUpdated": 1662888073288
-        }
-      }
-    },
-    "可以通过参数": {
-      "可以通过参数": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1661854921909
         }
       }
     },
@@ -336,6 +304,22 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1663465002550
+        }
+      }
+    },
+    "java知识点": {
+      "java知识点": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1664434297435
+        }
+      }
+    },
+    "powershell配置": {
+      "powershell配置": {
+        "internalLink": {
+          "count": 2,
+          "lastUpdated": 1664434346645
         }
       }
     }
