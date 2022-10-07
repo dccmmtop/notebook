@@ -83,7 +83,7 @@ final boolean nonfairTryAcquire(int acquires) {
   int c = getState();  
   // 没有线程持有锁
   if (c == 0) {  
-    // 抢锁
+    // 直接抢锁。没有判断队列中是否有线程排对，插队，不公平
     if (compareAndSetState(0, acquires)) { 
       // 抢锁成功
       setExclusiveOwnerThread(current);  
@@ -102,6 +102,47 @@ final boolean nonfairTryAcquire(int acquires) {
   return false;  
 }
 ```
+
+#### 公平锁的实现
+
+```java
+protected final boolean tryAcquire(int acquires) {
+  final Thread current = Thread.currentThread();
+  int c = getState();
+  if (c == 0) {
+    // hasQueuedPredecessors： 当线程尝试获取锁时，不是直接去抢，
+    //    而是先判断是否存在队列，如果存在就不抢了，返回抢锁失败
+    if (!hasQueuedPredecessors() &&
+        compareAndSetState(0, acquires)) {
+      setExclusiveOwnerThread(current);
+      return true;
+    }
+  }
+  else if (current == getExclusiveOwnerThread()) {
+    int nextc = c + acquires;
+    if (nextc < 0)
+      throw new Error("Maximum lock count exceeded");
+    setState(nextc);
+    return true;
+  }
+  return false;
+}
+// 是否存在队列并且(下一个待唤醒的线程不是本线程(准备重入锁))
+public final boolean hasQueuedPredecessors() {
+  // The correctness of this depends on head being initialized
+  // before tail and on head.next being accurate if the current
+  // thread is first in queue.
+  Node t = tail; // Read fields in reverse initialization order
+  Node h = head;
+  Node s;
+  return h != t &&
+    ((s = h.next) == null || s.thread != Thread.currentThread());
+}
+```
+
+于非公平锁相比，只有`tryAcquire` 方法的区别，
+
+
 
 #### 为什么需要再次抢锁?
 
