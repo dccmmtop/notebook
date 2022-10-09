@@ -83,7 +83,7 @@ final boolean nonfairTryAcquire(int acquires) {
   int c = getState();  
   // 没有线程持有锁
   if (c == 0) {  
-    // 直接抢锁。没有判断队列中是否有线程排对，插队，不公平
+    // 直接抢锁。没有判断队列中是否有线程排队，插队，不公平
     if (compareAndSetState(0, acquires)) { 
       // 抢锁成功
       setExclusiveOwnerThread(current);  
@@ -148,15 +148,11 @@ public final boolean hasQueuedPredecessors() {
 
 因为抢锁失败有两种原因，1是当前线程确实没有获取到锁。2是当前线程之前已经获取到锁了，还想再获取一次。
 
-
-
-对于1这种情况，让线程再抢一次，可能会抢到锁，就不用调用系统api把线程挂起，以及后面的唤醒，提高了性能。
+对于1这种情况，让线程再抢一次，可能会抢到锁，就不用调用系统api把线程挂起，提高性能
 
 对于2， 只需改变加锁的次数，就可以标记当前线程已经加锁的次数了，再释放锁时，对应的减成0就可以认为当前线程已经完全释放锁了，这就是可重入锁的实现原理
 
 #### 构造队列节点及入队
-
-
 
 下面看一下构造线程节点的实现:  
 
@@ -299,7 +295,7 @@ public final boolean release(int arg) {
   // 释放锁
   if (tryRelease(arg)) {
     Node h = head;
-    // 头节点不为空，且头节点的waitStatus不是已取消的
+    // 头节点不为空，且头节点的waitStatus不是默认状态
     if (h != null && h.waitStatus != 0)
       //传入的是头节点
       unparkSuccessor(h);
@@ -346,3 +342,7 @@ private void unparkSuccessor(Node node) {
 ## 获取锁的流程图
 
 ![](../images/Pasted%20image%2020221007094312.png)
+
+## 队列中节点状态
+![](../images/Pasted%20image%2020221009092730.png)
+
