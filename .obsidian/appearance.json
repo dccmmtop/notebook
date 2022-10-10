@@ -1,9 +1,18 @@
 {
-  "theme": "obsidian",
+  "theme": "moonstone",
   "cssTheme": "Blue Topaz",
   "translucency": false,
-  "baseFontSize": 15,
-  "enabledCssSnippets": [],
+  "baseFontSize": 17,
+  "enabledCssSnippets": [
+    "font",
+    "image-grid",
+    "clutter-free-headings",
+    "external-link-icons",
+    "folder-icons",
+    "general",
+    "tag-pills"
+  ],
   "monospaceFontFamily": "Hack",
-  "textFontFamily": "宋体"
+  "textFontFamily": "083-上首粗楷体,宋体",
+  "interfaceFontFamily": "宋体"
 }

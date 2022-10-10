@@ -43,70 +43,6 @@
   "insertCommaAfterFrontMatterCompletion": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "Survivor": {
-      "Survivor": {
-        "currentFile": {
-          "count": 8,
-          "lastUpdated": 1662888073288
-        }
-      }
-    },
-    "Humongous": {
-      "Humongous": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1662884096040
-        }
-      }
-    },
-    "MaxGCPauseMillis": {
-      "MaxGCPauseMillis": {
-        "currentFile": {
-          "count": 4,
-          "lastUpdated": 1662887817550
-        }
-      }
-    },
-    "YoungGC": {
-      "YoungGC": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1662887068139
-        }
-      }
-    },
-    "G1NewSizePercent": {
-      "G1NewSizePercent": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1662887876784
-        }
-      }
-    },
-    "MaxG1NewSizePercent": {
-      "MaxG1NewSizePercent": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1662887914571
-        }
-      }
-    },
-    "Initial": {
-      "Initial": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1662888534295
-        }
-      }
-    },
-    "这使得G1在不同的场景中可以获得最佳的停顿时间和吞吐量。": {
-      "这使得G1在不同的场景中可以获得最佳的停顿时间和吞吐量。": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1662889791305
-        }
-      }
-    },
     "-gccapacity": {
       "-gccapacity": {
         "currentFile": {
@@ -270,8 +206,8 @@
     "java知识点": {
       "java知识点": {
         "internalLink": {
-          "count": 4,
-          "lastUpdated": 1665042355991
+          "count": 6,
+          "lastUpdated": 1665389875649
         }
       }
     },
@@ -312,6 +248,62 @@
         "currentFile": {
           "count": 2,
           "lastUpdated": 1665043265700
+        }
+      }
+    },
+    "Semaphore": {
+      "Semaphore": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1665370454660
+        }
+      }
+    },
+    "permits": {
+      "permits": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1665371776274
+        }
+      }
+    },
+    "CyclicBarrier": {
+      "CyclicBarrier": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1665389573320
+        }
+      }
+    },
+    "tryAcquire": {
+      "tryAcquire": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1665388150771
+        }
+      }
+    },
+    "CountDownLatch": {
+      "CountDownLatch": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1665389169614
+        }
+      }
+    },
+    "和await": {
+      "和await": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1665389293947
+        }
+      }
+    },
+    "barrierAction": {
+      "barrierAction": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1665389739836
         }
       }
     }
