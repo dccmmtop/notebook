@@ -14,12 +14,12 @@
   "showComplementAutomatically": true,
   "showIndexingStatus": true,
   "descriptionOnSuggestion": "Short",
-  "selectSuggestionKeys": "Enter",
+  "selectSuggestionKeys": "Tab",
   "additionalCycleThroughSuggestionsKeys": "None",
   "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
   "openSourceFileKey": "None",
   "propagateEsc": false,
-  "enableCurrentFileComplement": true,
+  "enableCurrentFileComplement": false,
   "currentFileMinNumberOfCharacters": 0,
   "onlyComplementEnglishOnCurrentFileComplement": false,
   "enableCurrentVaultComplement": false,
@@ -35,7 +35,7 @@
   "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
   "caretLocationSymbolAfterComplement": "",
   "displayedTextSuffix": " => ...",
-  "enableInternalLinkComplement": true,
+  "enableInternalLinkComplement": false,
   "suggestInternalLinkWithAlias": false,
   "excludeInternalLinkPathPrefixPatterns": "",
   "enableFrontMatterComplement": true,
@@ -43,14 +43,6 @@
   "insertCommaAfterFrontMatterCompletion": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "-gccapacity": {
-      "-gccapacity": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1662974844459
-        }
-      }
-    },
     "volatile": {
       "volatile": {
         "currentFile": {
@@ -206,8 +198,8 @@
     "java知识点": {
       "java知识点": {
         "internalLink": {
-          "count": 6,
-          "lastUpdated": 1665389875649
+          "count": 9,
+          "lastUpdated": 1665458923042
         }
       }
     },
