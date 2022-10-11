@@ -3,3 +3,5 @@
 2022-10-11T18:09:31.662+0800	[31mERROR[0m	parse/base_convert.go:60	read file failed open F:\notebook\1.md: The system cannot find the file specified.
 
 2022-10-11T18:09:32.240+0800	[31mERROR[0m	utils/github.go:101	未能找到 issue, title: 
+2022-10-11T18:14:30.131+0800	[34mINFO[0m	utils/github.go:143	仓库中已存在博客，更新: 并发编程之Atomic和Unsafe魔法类
+2022-10-11T18:14:32.705+0800	[34mINFO[0m	utils/github.go:159	更新成功，并发编程之Atomic和Unsafe魔法类

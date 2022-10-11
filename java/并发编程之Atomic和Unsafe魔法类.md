@@ -97,6 +97,7 @@ Unsafe 提供的 API 大致可分为内存操作、CAS、Class 相关、对象�
 ![](../images/Pasted%20image%2020221011141133.png)
 
 ### 内存操作
+
 - 分配内存, 相当于 C++的 malloc 函数
 `public native long allocateMemory(long bytes);`
 
