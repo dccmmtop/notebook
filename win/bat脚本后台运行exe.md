@@ -6,11 +6,8 @@ tags: [win]
 
 新建`start.bat`文件，输入如下命令：
 
-```shell
-@echo off 
-if "%1" == "h" goto begin 
-mshta vbscript:createobject("wscript.shell").run("%~nx0 h",0)(window.close)&&exit 
-:begin
-
-D:\123.exe
+```bat
+Set ws = CreateObject("Wscript.Shell") 
+ws.run "cmd /c D:/1.exe",vbhide
+```
 ```

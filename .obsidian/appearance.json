@@ -2,7 +2,7 @@
   "theme": "moonstone",
   "cssTheme": "Blue Topaz",
   "translucency": false,
-  "baseFontSize": 17,
+  "baseFontSize": 21,
   "enabledCssSnippets": [
     "font",
     "image-grid",
@@ -14,5 +14,6 @@
   ],
   "monospaceFontFamily": "Hack",
   "textFontFamily": "083-上首粗楷体,宋体",
-  "interfaceFontFamily": "宋体"
+  "interfaceFontFamily": "宋体",
+  "accentColor": ""
 }
