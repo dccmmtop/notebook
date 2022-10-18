@@ -257,7 +257,7 @@ public V put(K key, V value) {
         return putForNullKey(value);  
     int hash = hash(key);  
     int i = indexFor(hash, table.length); 
-    // 因为形成了环，导致 e != null 永远不成立。死循环 
+    // 因为形成了环，导致 e != null 永远成立。死循环 
     for (Entry<K,V> e = table[i]; e != null; e = e.next) {  
         Object k;  
         if (e.hash == hash && ((k = e.key) == key || key.equals(k))) {  
@@ -371,5 +371,10 @@ final Node<K,V>[] resize() {
 ![](../images/Pasted%20image%2020221016210441.png)
 如上所示。这种移动方式没有改变节点关系的方向，所以并发之下也没有问题
 
+### 扩容因子为什么是0.75
+
 ## 1.8版本链表与红黑树的转换
-待续....
+1. 链表长度 > 8   
+2. 容量 > 64
+3. 性能提升的不是很高，在大量数据下，可能会提升5% ~10%, 数据量不大时。没有什么区别
+4.  红黑树
