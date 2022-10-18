@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "87e087a6be70bba5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "java/ArrayList和CopyOnWriteArrayList.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ba6a68a89a75e492",
             "type": "leaf",
             "state": {
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "java/ConcurrentHashMap与HashTable.md",
+                "file": "java/ArrayList和CopyOnWriteArrayList.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "java/ConcurrentHashMap与HashTable.md",
+                "file": "java/ArrayList和CopyOnWriteArrayList.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "java/ConcurrentHashMap与HashTable.md"
+                "file": "java/ArrayList和CopyOnWriteArrayList.md"
               }
             }
           }
@@ -164,7 +176,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "ba6a68a89a75e492",
+  "active": "87e087a6be70bba5",
   "lastOpenFiles": [
     "hidden/未命名.md",
     "java/ConcurrentHashMap与HashTable.md",

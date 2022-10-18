@@ -8,7 +8,7 @@
   "EnglishSpace": true,
   "BraceSpace": true,
   "NumberSpace": true,
-  "InlineCodeSpace": true,
+  "InlineCodeSpace": false,
   "InlineFormulaSpace": true,
   "LinkSpace": true,
   "LinkSmartSpace": true,
