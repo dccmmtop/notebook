@@ -1,10 +1,8 @@
 [
   "oz-clear-unused-images",
-  "obsidian-vimrc-support",
   "cm-editor-syntax-highlight-obsidian",
   "cm-typewriter-scroll-obsidian",
   "obsidian-code-block-enhancer",
-  "vim-im-select",
   "easy-typing-obsidian",
   "various-complements"
 ]

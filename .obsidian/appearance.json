@@ -1,8 +1,8 @@
 {
   "theme": "moonstone",
-  "cssTheme": "Blue Topaz",
+  "cssTheme": "Minimal",
   "translucency": false,
-  "baseFontSize": 21,
+  "baseFontSize": 15,
   "enabledCssSnippets": [
     "font",
     "image-grid",
