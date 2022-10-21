@@ -2,3 +2,5 @@
 2022-10-21T16:35:48.461+0800	[31mERROR[0m	parse/base_convert.go:60	read file failed open F:\notebook\代码片段\ruby\分布式锁.md: The system cannot find the path specified.
 
 2022-10-21T16:35:48.981+0800	[31mERROR[0m	utils/github.go:101	未能找到 issue, title: 
+2022-10-21T16:39:31.307+0800	[34mINFO[0m	utils/github.go:143	仓库中已存在博客，更新: 线程池原理
+2022-10-21T16:39:33.771+0800	[34mINFO[0m	utils/github.go:159	更新成功，线程池原理
