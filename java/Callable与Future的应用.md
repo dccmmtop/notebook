@@ -164,3 +164,7 @@ while(!future.isDone()) {
 3. 通过 Future 获取任务的返回值
 
 刚刚我们看 ExecutorService 中的 submit 方法返回的是 Future 接口，然后通过接口中的get 方法获取任务的返回值，其实 submit 返回的是 Future 的实现类： FutureTask, 至于 FutureTask 是如何配合线程池拿到任务的返回值，就需要深入源码查看底层实现了，这个以后再新写一遍博客讲解。
+
+# 参考
+
+http://www.lllpan.top/article/102

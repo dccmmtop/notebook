@@ -12,3 +12,5 @@
 2022-10-25T10:00:31.540+0800	[34mINFO[0m	utils/github.go:143	仓库中已存在博客，更新: 定时任务和周期性任务线程池的应用及原理
 2022-10-25T10:00:34.171+0800	[34mINFO[0m	utils/github.go:159	更新成功，定时任务和周期性任务线程池的应用及原理
 2022-10-29T16:56:56.570+0800	[34mINFO[0m	utils/github.go:139	仓库中未发现博客，新增: 并发编程之 ForkJoin 框架
+2022-10-29T18:30:23.787+0800	[34mINFO[0m	utils/github.go:143	仓库中已存在博客，更新: Callable与Future的应用
+2022-10-29T18:30:25.714+0800	[34mINFO[0m	utils/github.go:159	更新成功，Callable与Future的应用
