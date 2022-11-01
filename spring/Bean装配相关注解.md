@@ -15,7 +15,6 @@
 ## @ContextConfiguration(classes=xxx.class)
 
 需要在 xxx.class 中加载配置
-
 ## @Component
 
 向容器中注册组件
