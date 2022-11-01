@@ -1,3 +1,8 @@
+---
+title: Bean装配相关注解
+date: 2022-11-01 16:05:53
+tags: [spring]
+---
 ## @ComponentScan
 
 - 启用组件扫描
