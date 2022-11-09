@@ -10,4 +10,3 @@ tags: [win]
 Set ws = CreateObject("Wscript.Shell") 
 ws.run "cmd /c D:/1.exe",vbhide
 ```
-```

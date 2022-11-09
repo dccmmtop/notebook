@@ -1,5 +1,5 @@
 ---
-title: IoC 思想讲解和实现
+title: IoC 思想和实现
 date: 2022-11-04 15:49:47
 tags: [java]
 ---
