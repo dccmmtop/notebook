@@ -28,3 +28,6 @@
 2022-11-09T13:15:04.190+0800	[34mINFO[0m	utils/github.go:159	更新成功，spring IOC 加载过程简要介绍
 2022-11-24T20:53:20.821+0800	[34mINFO[0m	utils/github.go:143	仓库中已存在博客，更新: spring IOC 加载过程简要介绍
 2022-11-24T20:53:23.824+0800	[34mINFO[0m	utils/github.go:159	更新成功，spring IOC 加载过程简要介绍
+2022-11-24T20:54:04.315+0800	[31mERROR[0m	parse/base_convert.go:60	read file failed open F:\notebook\spring\sptring如何解决循环依赖.md: The system cannot find the file specified.
+
+2022-11-24T20:54:05.101+0800	[31mERROR[0m	utils/github.go:101	未能找到 issue, title: 

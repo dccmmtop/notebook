@@ -1,5 +1,5 @@
 ---
-title: sptring 如何解决循环依赖
+title: spring 如何解决循环依赖
 date: 2022-11-19 18:14:12
 tags: [java,spring]
 ---
