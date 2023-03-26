@@ -106,6 +106,7 @@ sentinel known-sentinel mymaster 192.168.0.60 26381 e9f530d3882f8043f76ebb8e1686
 ```conf
 sentinel monitor mymaster 192.168.0.60 6380 2
 ```
+
 当 6379 节点再次启动时，哨兵集群根据集群元信息就可以将 6379 作为从节点加入集群中。
 
 
