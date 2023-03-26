@@ -293,3 +293,4 @@ Redis 客户端命令对应的 RedisTemplate 中的方法列表：
 | spop key                                                    | rt.opsForSet().pop("key")                                   |
 | srandmember key count                                       | rt.opsForSet().randomMember("key",count)                    |
 | srem key member1 member2...                                 | rt.opsForSet().remove("key","member1","member2",...)        |
+
