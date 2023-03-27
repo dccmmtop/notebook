@@ -28,6 +28,7 @@ class BlogTool
   def  deal_file(type, file_name)
     ab_file_name = File.join(@notebook_dir, file_name)
     return unless (ab_file_name =~ /.md$/)
+    p type
     if type == "D"
       delete_blog(file_name)
     else
@@ -36,7 +37,8 @@ class BlogTool
   end
 
   def delete_blog(file_name)
-    ab_file_name = File.join(@deploy_blog_posts_dir, file_name)
+    ab_file_name = File.join(@deploy_blog_posts_dir, File.basename(file_name))
+    return unless File.exist? ab_file_name
     content = File.read(ab_file_name)
     all_imgs = content.scan(/!\[.*\]\((.*)\)/).flatten
     all_imgs.each do |img|
@@ -54,8 +56,12 @@ class BlogTool
     content = File.read(ab_file_name)
     all_imgs = content.scan(/!\[.*\]\((.*)\)/).flatten
     all_imgs.each do |img|
-      puts "复制图片: #{img}"
+    puts "复制图片: #{img}"
+        begin
       FileUtils.cp(File.join(ab_dir, img), @deploy_blog_images_dir)
+      rescue => e
+        puts "复制图片失败，跳过: #{e}"
+        end
     end
 
     puts "复制blog: #{ab_file_name}"
