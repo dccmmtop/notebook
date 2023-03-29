@@ -28,7 +28,6 @@ class BlogTool
   def  deal_file(type, file_name)
     ab_file_name = File.join(@notebook_dir, file_name)
     return unless (ab_file_name =~ /.md$/)
-    p type
     if type == "D"
       delete_blog(file_name)
     else
