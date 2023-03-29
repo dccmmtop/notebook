@@ -3,6 +3,7 @@ title: redis 使用规范与性能优化
 date: 2023-03-27 23:11:51
 tags: [redis]
 ---
+**目录**
 - [键的设计](#键的设计)
 - [value 设计](#value-设计)
     - [拒绝 bigkey （强制）](#拒绝-bigkey-强制)
