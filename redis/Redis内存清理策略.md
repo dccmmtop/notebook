@@ -5,7 +5,7 @@ tags: [redis]
 ---
 - [三种清触策略](#三种清触策略)
   - [针对设置了过期时间的 key](#针对设置了过期时间的-key)
-    - [针对所有的 key](#针对所有的-key)
+  - [针对所有的 key](#针对所有的-key)
   - [不处理](#不处理)
 - [LRU 算法（Least Recently Used，最近最少使用）](#lru-算法leastrecentlyused最近最少使用)
 - [LFU 算法（Least Frequently Used，最不经常使用）](#lfu-算法leastfrequentlyused最不经常使用)
@@ -29,7 +29,7 @@ tags: [redis]
 3. volatile-lru: 会使用 lru 算法来选择设置了过期时间的 key 进行删除 
 4. volatile-lfu: 会使用 lfu 算法来选择设置了过期时间的 key 进行删除 
 
-#### 针对所有的 key
+### 针对所有的 key
 
 5. allkeys-random: 从所有的键值对中随机选择并删除
 6. allkeys-lru: 从所有的键值对中使用 lru 算法选择并删除
