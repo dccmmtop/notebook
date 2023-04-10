@@ -1,5 +1,5 @@
 ---
-title: MQ 的基本概念和使用示例
+title: MQ 的基本概念和五种模式使用示例
 date: 2023-04-07 23:27:52
 tags: [rabbitMQ]
 ---
