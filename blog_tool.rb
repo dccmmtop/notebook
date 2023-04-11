@@ -94,9 +94,9 @@ class BlogTool
     `cd #{@deploy_blog_dir} && hugo`
     puts "1111"
 
-    puts Dir.glob("#{@deploy_blog_dir}\\public\\*")
+    puts Dir.glob("#{@deploy_blog_dir}/public/*")
 
-    FileUtils.cp_r(Dir.glob("#{@deploy_blog_dir}\\public\\*"), @dist_dir)
+    FileUtils.cp_r(Dir.glob("#{@deploy_blog_dir}/public/*"), @dist_dir)
 
 
 
