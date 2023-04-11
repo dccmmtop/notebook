@@ -46,7 +46,9 @@ class BlogTool
   def deploy
     `cd #{@deploy_blog_dir} && hugo`
 
-    `cd #{@dist_dir} &&  cp -r -Force  #{@deploy_blog_dir}\\public\* ./ && git add . && git commit -m "update" && git push`
+    FileUtils.cp("#{@deploy_blog_dir}\\public\*", @dist_dir)
+
+    git_save(@dist_dir)
   end
 
   def deal_file(type, file_name)
