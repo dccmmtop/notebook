@@ -767,7 +767,12 @@ RabbitMQ 通过两个回调方法来让生产者确认消息是否正确投递�
 1. 消息是否投递到交换器中，调用 confirmListener
 2. 消息是否投递到队列中，调用 returnListener
 
+**注意：上面两种状态只是生产者与Broker之间的关系，和消费者的是否接收确认消息无关**
+
 ### confirmListener
+代表生产者将消息投递到Broker时的状态，后续会出现两种情况：
+1. ack 代表数据已经被broker接收，
+2. nack 代表broker拒收消息，原因有多种：队列已满，限流，IO异常等...
 
 示例代码:
 
@@ -805,6 +810,8 @@ public void testConfirm() {
 ```
 
 ### returnListener
+代表消息正常被broker接收(ack)，但broker没有对应的队列对消息进行投递，消息被退回给生产者。
+
 
 ```java
 //测试 return模式
