@@ -92,7 +92,7 @@ class BlogTool
 
 
     `cd #{@deploy_blog_dir} && hugo`
-    puts "1111"
+    puts "1111 #{@deploy_blog_dir}"
 
     puts Dir.glob("#{@deploy_blog_dir}/public/*")
 
