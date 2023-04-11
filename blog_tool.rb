@@ -90,7 +90,9 @@ class BlogTool
 
   def deploy()
 
+
     `cd #{@deploy_blog_dir} && hugo`
+    puts "1111"
 
     puts Dir.glob("#{@deploy_blog_dir}\\public\\*")
 
