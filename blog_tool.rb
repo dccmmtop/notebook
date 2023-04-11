@@ -82,13 +82,13 @@ class BlogTool
 
 
 
-    deploy
+    deploy()
 
   end
 
 
 
-  def deploy
+  def deploy()
 
     `cd #{@deploy_blog_dir} && hugo`
 
