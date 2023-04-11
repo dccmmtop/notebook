@@ -760,3 +760,84 @@ public class CaiYunApp {
 - 发布订阅模式: 引入交换器，多个队列，多个消费者。实现一端发布，多端都能收到消息
 - 路由模式: 在发布订阅的基础上，给消费者增加了自由选择消息的能力。通过全值匹配路由key实现的
 - Topics 模式: 在路由模式的基础上，路由key采用通配符的匹配方式， 这种模式最灵活，使用最多
+
+## 消息的可靠投递
+
+RabbitMQ 通过两个回调方法来让生产者确认消息是否正确投递到队列中，
+1. 消息是否投递到交换器中，调用 confirmListener
+2. 消息是否投递到队列中，调用 returnListener
+
+### confirmListener
+
+示例代码:
+
+```java
+//测试 Confirm 模式
+@Test
+public void testConfirm() {
+    //定义回调
+    rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
+        /**
+            *
+            * @param correlationData 相关配置信息
+            * @param ack   exchange交换机 是否成功收到了消息。true 成功，false代表失败
+            * @param cause 失败原因
+            */
+        @Override
+        public void confirm(CorrelationData correlationData, boolean ack, String cause) {
+            System.out.println("confirm方法被执行了....");
+
+                //ack 为  true表示 消息已经到达交换机
+            if (ack) {
+                //接收成功
+                System.out.println("接收成功消息" + cause);
+            } else {
+                //接收失败
+                System.out.println("接收失败消息" + cause);
+                //做一些处理，让消息再次发送。
+            }
+        }
+    });
+
+        //进行消息发送
+    rabbitTemplate.convertAndSend("test_exchange_confirm","confirm","message Confirm...");
+}
+```
+
+### returnListener
+
+```java
+//测试 return模式
+@Test
+public void testReturn() {
+
+    //设置交换机处理失败消息的模式   为true的时候，消息达到不了 队列时，会将消息重新返回给生产者
+    rabbitTemplate.setMandatory(true);
+
+    //定义回调
+    rabbitTemplate.setReturnCallback(new RabbitTemplate.ReturnCallback() {
+        /**
+            *
+            * @param message   消息对象
+            * @param replyCode 错误码
+            * @param replyText 错误信息
+            * @param exchange  交换机
+            * @param routingKey 路由键
+            */
+        @Override
+        public void returnedMessage(Message message, int replyCode, String replyText, String exchange, String routingKey) {
+            System.out.println("return 执行了....");
+
+            System.out.println("message:"+message);
+            System.out.println("replyCode:"+replyCode);
+            System.out.println("replyText:"+replyText);
+            System.out.println("exchange:"+exchange);
+            System.out.println("routingKey:"+routingKey);
+
+            //处理
+        }
+    });
+    //进行消息发送
+    rabbitTemplate.convertAndSend("test_exchange_confirm","confirm","message return...");
+}
+```
