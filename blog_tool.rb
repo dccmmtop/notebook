@@ -45,8 +45,7 @@ class BlogTool
 
   def deploy
     `cd #{@deploy_blog_dir} && hugo`
-
-    FileUtils.cp_r("#{@deploy_blog_dir}\\public", @dist_dir)
+    FileUtils.cp_r(Dir.glob("#{@deploy_blog_dir}\\public\\*"), @dist_dir)
 
     git_save(@dist_dir)
   end
