@@ -18,6 +18,7 @@ tags: [rabbitMQ]
   - [单条消息](#单条消息)
   - [整个队列设置 TTL](#整个队列设置-ttl)
 - [死信队列](#死信队列)
+  - [死信队列的实现步骤](#死信队列的实现步骤)
 - [延迟队列](#延迟队列)
 - [消息幂等设计](#消息幂等设计)
 
@@ -399,7 +400,91 @@ public Queue bootQueue(){
 **如果两者都设置了 TTL 以短的时间为准**
 
 ## 死信队列
-TODO
+没有被及时消费的消息将被投放到一个特殊队列，被称为死信队列
+
+没有被及时消费的原因:
+1. 消息被拒绝(basic.reject, basic.nack)， 并且不再重新投递，（requeue = false）
+2. 消息超时未被消费
+3. 队列长度达到最大
+
+### 死信队列的实现步骤
+
+声明队列Q的时候，在附加参数 `x-dead-letter-exchange` 指定交换器E的名称，只是声明，并非绑定。 它的含义是，当在队列Q上产生死信时，该消息会通过交换器 E 发走。
+就这么简单，至于 E 会把消息发送发送到哪里，就看交换器E绑定了哪些队列。
+![](../images/2023-04-13-22-56-52.png)
+
+代码示例:
+
+```java
+
+// 带有死信的队列
+public static final String QUEUE_NAME_WITH_DEAD = "boot_queue_with_dead";
+
+// 死信消息从正常队列中移除，通过该交换机进入死信队列
+// 和正常交换机没有差别，只不过被带有死信的队列指定了
+public static final String deadExchange = "dead_exchange";
+// 死信队列,接收死信交换机过来的消息
+public static String deadQueue = "dead_queue";
+
+
+// 声明死信交换器,和普通交换器一样
+@Bean("bootDeadExchange")
+public Exchange bootDeadExchange() {
+    return ExchangeBuilder.topicExchange(deadExchange).durable(false).build();
+}
+
+// 声明接收死信的队列
+@Bean("bootDeadQueue")
+public Queue bootDeadQueue(){
+    return QueueBuilder.durable(deadQueue).build();
+}
+// 把接收死信的队列与死信交换器绑定
+@Bean
+public Binding bindWithDeadQueueExchange(@Qualifier("bootDeadQueue") Queue queue, @Qualifier("bootDeadExchange") Exchange exchange){
+
+    return BindingBuilder.bind(queue).to(exchange).with("boot.#").noargs();
+}
+
+//********* 这才是死信队列的重要步骤 ***************
+// 声明带有死信的队列
+@Bean("bootWithDeadQueue")
+public Queue bootWithDeadQueue(){
+    Map<String, Object> arg = new HashMap<>();
+    // 声明接收死信消息的交换器
+    // *****这一步很重要，可以让死信通过 deadExchange 发走****
+    arg.put("x-dead-letter-exchange",deadExchange);
+    return QueueBuilder.durable(QUEUE_NAME_WITH_DEAD).withArguments(arg).build();
+}
+
+// 将带有死信的队列绑定到交换机上
+@Bean
+public Binding bindDeadQueueExchange(@Qualifier("bootWithDeadQueue") Queue queue, @Qualifier("bootTopicExchange") Exchange exchange){
+    return BindingBuilder.bind(queue).to(exchange).with("boot.#").noargs();
+}
+
+
+// 发消息
+@Test
+public void sendDeadMsg() {
+
+    MessageProperties properties = new MessageProperties();
+    properties.setExpiration("6000");
+    Message message = new Message("你好,6秒后我将要从列中移除，并进入死信队列".getBytes(),properties);
+
+    rabbitTemplate.convertAndSend(RabbitMQConfig.EXCHANGE_NAME,"boot.hei",message);
+}
+```
+
+效果如下：
+
+![](../images/2023-04-13-23-03-19.png)
+
+六秒后:
+
+![](../images/2023-04-13-23-03-48.png)
+
+
+
 
 ## 延迟队列
 TODO
