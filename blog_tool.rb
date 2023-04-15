@@ -24,7 +24,7 @@ class BlogTool
       deal_file(type, file_name)
     end
     git_save(@notebook_dir)
-    # git_save(@deploy_blog_dir)
+    git_save(@deploy_blog_dir)
     deploy
   end
 
