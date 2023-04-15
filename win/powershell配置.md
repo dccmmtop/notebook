@@ -84,7 +84,9 @@ oh-my-posh init pwsh --config ~\scoop\apps\oh-my-posh\current\themes\robbyrussel
 
 
 
+### 快速跳转目录
 
+`Install-Module ZLocation -Scope CurrentUser`
 
 
 
