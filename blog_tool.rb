@@ -15,7 +15,7 @@ class BlogTool
     @deploy_blog_images_dir = File.join(@deploy_blog_content_dir, "images")
   end
 
-  def main
+  def main(local = false)
     `cd #{@notebook_dir}`
     git_info_list = `git status -s`.split("\n")
     puts git_info_list
@@ -24,14 +24,23 @@ class BlogTool
       deal_file(type, file_name)
     end
     git_save(@notebook_dir)
-    git_save(@deploy_blog_dir)
-    deploy
+    if local
+      deploy
+    else
+      git_save(@deploy_blog_dir)
+    end
   end
 
   def deploy
+    puts "获取远程最新"
+    `cd #{@dist_dir} && git pull`
+    puts "本地生成"
     `cd #{@deploy_blog_dir} && hugo`
+    puts "复制到部署目录"
     FileUtils.cp_r(Dir.glob("#{@deploy_blog_dir}/public/*"), @dist_dir)
+    puts "推送"
     git_save(@dist_dir)
+    puts "部署完成"
   end
 
   def deal_file(type, file_name)
@@ -152,6 +161,8 @@ if ARGV[0] == "c"
     return
   end
   blog_tool.convert_local_img_to_url(blog_file)
+elsif ARGV[0] == "l"
+  blog_tool.main(true)
 else
   blog_tool.main
 end
