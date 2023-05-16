@@ -28,3 +28,8 @@ tags: [瞎折腾]
 项目地址请看: 
 - [https://github.com/dccmmtop/xiaogpt](https://github.com/dccmmtop/xiaogpt)
 - [电脑控制服务示例](https://gitee.com/dccmmtop/PcCtrl)
+
+
+## 该项目存在的问题
+
+那么频繁的调用小爱同学会话记录接口，很难长久稳定的运行，肯定会被小米封的
