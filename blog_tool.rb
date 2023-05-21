@@ -90,7 +90,9 @@ class BlogTool
   end
 
   def git_save(path)
-    `cd #{path} && git add . && git commit -m "update" && git push`
+    cmd = "cd #{path} && git add . && git commit -m 'update' && git push"
+    puts cmd
+    system(cmd)
   end
 
   def convert_local_img_to_url(file_name)
