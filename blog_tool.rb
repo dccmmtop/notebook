@@ -25,13 +25,13 @@ class BlogTool
     end
     git_save(@notebook_dir)
     if local
-      deploy
+      deploy()
     else
       git_save(@deploy_blog_dir)
     end
   end
 
-  def deploy
+  def deploy()
     puts "获取远程最新"
     `cd #{@dist_dir} && git pull`
     puts "本地生成"
