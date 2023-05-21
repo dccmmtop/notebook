@@ -6,7 +6,7 @@ require "json"
 
 class BlogTool
   def initialize
-    @home = ENV["HOME"]
+    @home = ENV["HOME"].gsub("\\", "/")
     @notebook_dir = "#{@home}/notebook"
     @deploy_blog_dir = "#{@home}/blog/hugo_blog"
     @dist_dir = "#{@home}/blog/dccmmtop.github.io"
