@@ -1,7 +1,9 @@
 ---
 title: linux批量重命名
 date: 2021-08-10 10:12:57
+tags: [linux]
 ---
+
 ## 通过rename命令批量重命名文件
 基本语法
 示例
@@ -53,3 +55,5 @@ img_0005421.jpeg renamed as dan_5421.jpg
 img_0005422.jpeg renamed as dan_5422.jpg
 ```
 上面的例子中，子模式‘\d{4}’会捕捉4个连续的数字，捕捉的四个数字匹配模式对应$1, 将会用于新的文件名。
+
+> 联系方式: dccmmtop@foxmail.com
