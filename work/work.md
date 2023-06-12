@@ -3,4 +3,108 @@ title: work
 date: 2023-06-12 10:10:56
 tags: [secret]
 ---
-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
+
+# 需求
+
+1. ~~用户导入慢~~ 【已完成】
+2. ~~机构导入~~，部门调整时关系错乱 【已完成】
+3. ~~机构导入过慢问题~~ 【已完成】
+
+4. 资源突然没有权限问题 【未开始】
+   ![](../images/2023-06-05-17-44-12.png)
+
+5. 添加人员为空的部门禁用 【进行中】
+
+## 部门禁用
+
+### 禁用部门以及联动
+
+#### 1. 部门禁用
+
+1. 添加部门禁用字段，数据库添加字段后，切记要更新缓存
+2. 禁用部门时，先检查部门以及所有子部门下是否有人。如果有人则不能禁用
+3. 更新部门禁用字段，更新缓存
+
+#### 2. 退出所有白名单
+
+1. 搞清楚白名单的业务逻辑
+2. 梳理清楚白名单增删查改的时机
+3. 梳理清楚删除部门的白名单会影响哪些功能
+4. 查找现有代码中部门退出白名单的逻辑，尽量复用那些已经使用最多的代码块
+
+#### 3. 退出所有工作圈子
+
+1. 梳理清楚部门和圈子的关系以及存储模型
+2. 梳理部门加入或离开圈子的时机
+3. 部门退出圈子的影响
+4. 复用代码
+
+#### 4. 取消公众号订阅
+
+1. 梳理清楚公众号和部门的之间的关系以及存储模型
+2. 部门和订阅之间的关系
+3. 明确影响范围
+4. 复用代码
+
+
+#### 5. 删除应用的可见权限
+
+1. 应用是啥
+2. 可见权限又是啥
+3. 他们和部门之间的关系是啥
+4. 如何删除应用的可见权限
+5. 影响范围
+
+### 禁用部门之后对该部门自身的影响
+TODO
+
+### 查找禁用部门入口
+TODO
+### 禁用部门之后返回给端上的的数据变动
+TODO
+
+
+# 日报
+
+- 2023-06-06 部门导入导致的部门编码错乱修复
+  原因：
+    组织机构层级调整必然导致部门编码发生错乱，但是没有修复动作
+  修复方法：
+    记录所有发生层级变化的部门，然后仅修复这些部门的编码
+    由于引入了部门编码修复的逻辑，会导致执行时间变长，该时间和调整之后部门所辖的所有子部门数量有关
+
+- 2023-06-07 部门导入慢优化
+  改动逻辑： 
+  1. 空间换时间，减少不必要的查询，可节省80%，优化效果明显 
+  2. 减少不必要的数据库更新。以前时全量更新子部门数量，现仅更新发生变化的
+
+- 2023-06-08 梳理部门禁用需求文档,评估影响范围
+  改动多，涉及广。级联功能变动点多
+
+- 2023-06-09 从代码逻辑层面梳理，评估难易程度
+  代码复杂，逻辑晦涩难懂。暂时没有清晰的头绪，先拆分，逐个模块看吧
+
+- 2023-06-12 部门禁用模块细化
+  按照从整体到局部的逻辑拆分,越细越好
+
+
+
+# 待查明的问题
+
+~~生产ruby~~ 版本 【已完成】
+
+~~开发分支规范~~： 1. 命令  2. 合并 【已完成】
+
+
+# 账号密码备忘
+wifi: pbcti202303
+
+### 网络接入
+11.1.215.157
+账号 gs_姓名全拼
+密码 Kfcs@123
+
+### 数据库
+11.1.196.238 
+esns minxing123
+SID: orcl
