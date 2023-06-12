@@ -18,6 +18,7 @@ class BlogTool
     @CIPHER_ALGO = "AES-256-CBC"
     @SALT_SIZE = 8
     @password = ENV["BLOG_PASS"]
+    @encrypt_flag = "dc1126"
   end
 
   def main(local = false)
@@ -157,7 +158,7 @@ class BlogTool
     end
     url
   end
-  
+
   def encrypt_blog(file_name, pass = "")
     @password = pass if pass.to_s != ""
     raise "未设置密码" if @password.to_s == ""
@@ -168,10 +169,15 @@ class BlogTool
     main_body_start_index += 5
     title = content[0, main_body_start_index]
 
-    main_body = content[main_body_start_index .. ]
+    main_body = content[main_body_start_index..]
+    if main_body.match?(@encrypt_flag)
+      puts "不会重复加密"
+      return
+    end
+
     encrypt_main_body = encrypt(main_body, @password)
     File.open(file_name, "w") do |io|
-      io.print title + encrypt_main_body
+      io.print title + @encrypt_flag + encrypt_main_body
     end
     puts "加密完成：#{file_name}"
   end
@@ -180,20 +186,29 @@ class BlogTool
     @password = pass if pass.to_s != ""
     raise "未设置密码" if @password.to_s == ""
     content = File.read(file_name)
-    puts "不是加密文件，跳过" and return unless content =~ /tags: \[.*secret.*\]/
+    unless content =~ /tags: \[.*secret.*\]/
+      puts "不是加密文件，跳过"
+      return
+    end
+    unless content.match?(@encrypt_flag)
+      puts "不是加密文件，跳过"
+      return
+    end
+
     main_body_start_index = content.index("\n---\n")
     raise "未找到正文" if main_body_start_index.nil?
     main_body_start_index += 5
     title = content[0, main_body_start_index]
 
-    main_body = content[main_body_start_index .. ]
+    main_body = content[main_body_start_index..]
+    main_body.gsub!(@encrypt_flag, "")
     encrypt_main_body = decrypt(main_body, @password)
     File.open(file_name, "w") do |io|
       io.print title + encrypt_main_body
     end
     puts "解密完成：#{file_name}"
   end
-  
+
   def encrypt(data, pass)
     salt = OpenSSL::Random.random_bytes(@SALT_SIZE)
     cipher = OpenSSL::Cipher::Cipher.new(@CIPHER_ALGO)
@@ -214,7 +229,6 @@ class BlogTool
     cipher.pkcs5_keyivgen(pass, salt, 1)
     cipher.update(data) + cipher.final
   end
-
 end
 
 # c = "C:\\Users\\dccmm\\notebook\\redis\\Redis的主从和哨兵以及集群架构.md"
@@ -232,7 +246,6 @@ if first_arg == "c"
   return
 end
 
-
 if first_arg == "l"
   blog_tool.main(true)
   return
@@ -242,7 +255,6 @@ if first_arg == "r"
   blog_tool.main(false)
   return
 end
-
 
 if first_arg == "en"
   blog_file = ARGV[1]
@@ -255,7 +267,6 @@ if first_arg == "en"
   return
 end
 
-
 if first_arg == "de"
   blog_file = ARGV[1]
   pass = ARGV[2]
@@ -266,7 +277,6 @@ if first_arg == "de"
   blog_tool.decrypt_blog(blog_file, pass)
   return
 end
-
 
 puts "==========帮助文档==========="
 puts "./blog_tool.rb l # 本地部署"
