@@ -281,5 +281,6 @@ end
 puts "==========帮助文档==========="
 puts "./blog_tool.rb l # 本地部署"
 puts "./blog_tool.rb r # 远程部署"
+puts "./blog_tool.rb c ./1.md # 将博客中的本地图片转换成图床中的链接"
 puts "./blog_tool.rb en ./1.md # 加密 1.md 文件"
 puts "./blog_tool.rb de ./1.md # 解密 1.md 文件"
