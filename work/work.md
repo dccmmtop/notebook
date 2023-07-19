@@ -3,4 +3,222 @@ title: work
 date: 2023-06-12 10:10:56
 tags: [secret]
 ---
-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
+
+# 需求
+
+1. ~~用户导入慢~~ 【已完成】
+2. ~~机构导入~~，部门调整时关系错乱 【已完成】
+3. ~~机构导入过慢问题~~ 【已完成】
+
+4. 资源突然没有权限问题 【进行中,搁置，暂时没有找到原因】
+   ![](../images/2023-06-05-17-44-12.png)
+
+5. 添加人员为空的部门禁用 【进行中】
+
+## 部门禁用
+
+### 禁用部门以及联动
+
+#### 1. 部门禁用
+
+1. 添加部门禁用字段，数据库添加字段后，切记要更新缓存
+2. 禁用部门时，先检查部门以及所有子部门下是否有人。如果有人则不能禁用
+3. 更新部门禁用字段，更新缓存
+
+#### 2. 退出所有白名单
+
+1. 搞清楚白名单的业务逻辑
+2. 梳理清楚白名单增删查改的时机
+3. 梳理清楚删除部门的白名单会影响哪些功能
+4. 查找现有代码中部门退出白名单的逻辑，尽量复用那些已经使用最多的代码块
+
+#### 3. 退出所有工作圈子
+
+1. 梳理清楚部门和圈子的关系以及存储模型
+2. 梳理部门加入或离开圈子的时机
+3. 部门退出圈子的影响
+4. 复用代码
+
+#### 4. 取消公众号订阅
+
+1. 梳理清楚公众号和部门的之间的关系以及存储模型
+2. 部门和订阅之间的关系
+3. 明确影响范围
+4. 复用代码
+
+
+#### 5. 删除应用的可见权限
+
+1. 应用是啥
+2. 可见权限又是啥
+3. 他们和部门之间的关系是啥
+4. 如何删除应用的可见权限
+5. 影响范围
+
+### 部门启用
+1. 父部门启用后，子部门自动启用
+2. 父部门禁用的情况下，子部门不能启用
+
+### 禁用部门之后对该部门自身的影响
+1. 停用机构只能删除，不能编辑/新建
+2. 给出停用机构标识
+
+### 查找禁用部门入口
+TODO
+- 当前用户可以操作部门的权限
+
+### 禁用部门之后返回给端上的的数据变动
+TODO
+
+# 部门调整对外接口 【已完成】
+仅仅涉及调整，不会有新增
+# 人员禁用接口 【已完成】
+
+
+# 日报
+
+- 2023-06-06 部门导入导致的部门编码错乱修复
+  原因：
+    组织机构层级调整必然导致部门编码发生错乱，但是没有修复动作
+  修复方法：
+    记录所有发生层级变化的部门，然后仅修复这些部门的编码
+    由于引入了部门编码修复的逻辑，会导致执行时间变长，该时间和调整之后部门所辖的所有子部门数量有关
+
+- 2023-06-07 部门导入慢优化
+  改动逻辑： 
+  1. 空间换时间，减少不必要的查询，可节省80%，优化效果明显 
+  2. 减少不必要的数据库更新。以前时全量更新子部门数量，现仅更新发生变化的
+
+- 2023-06-08 梳理部门禁用需求文档,评估影响范围
+  改动多，涉及广。级联功能变动点多
+
+- 2023-06-09 从代码逻辑层面梳理，评估难易程度
+  代码复杂，逻辑晦涩难懂。暂时没有清晰的头绪，先拆分，逐个模块看吧
+
+- 2023-06-12 部门禁用模块细化
+  按照从整体到局部的逻辑拆分,越细越好
+  
+- 2023-06-13 
+  - 部门级联禁用和人数校验
+  - 退出高管白名单
+- 2023-06-14
+  - 被禁用的部门退出所有工作圈
+- 2023-06-15
+  - 被禁用的部门取消订阅
+  - 接口频繁无权限排查
+- 2023-06-16
+  - 接口频繁无权限排查
+
+- 2023-06-19
+  部门层级调整接口 【api_v1】
+  1. 如何认证？
+  
+  禁用部门后移除app的可见权限
+
+- 2023-06-20
+  机构树基础组件根据参数是否显示被禁用的部门
+- 2023-06-21
+  机构树基础组件根据参数是否显示被禁用的部门
+- 2023-06-25
+  机构树基础组件根据参数是否显示被禁用的部门
+- 2023-06-26
+  人员组织管理机构树要显示已经禁用的部门
+  机构树管理添加禁用入口
+- 2023-06-27
+  高管白名单不显示被禁用的部门
+- 2023-06-28
+  工作圈部门不显示被禁用的部门
+- 2023-06-29
+  工作圈部门不显示被禁用的部门
+  只有社区管理员可以修改部门简称
+- 2023-06-30
+  社区管理员创建的群没有人员限制
+- 2023-07-03
+  只有社区管理员可以修改部门名称
+  上线内容准备
+- 2023-07-04
+  上线及验证
+  公众号群发消息，修改/选择范围，按最新组织架构查询，停用机构（禁用人员）不予展示
+- 2023-07-05
+  添加应用/应用管理员&可见范围选择 按最新组织架构查询，停用机构不予展示
+- 2023-07-06
+  修改/应用管理员&可见范围/查询
+  修改/应用管理员&可见范围/选择
+- 2023-07-07 
+  分级管理下禁用的部门不予展示
+- 2023-07-10
+  分级管理下禁用的部门不予展示
+
+
+
+
+  
+
+
+
+
+
+# 待查明的问题
+
+~~生产ruby~~ 版本 【已完成】
+
+~~开发分支规范~~： 1. 命令  2. 合并 【已完成】
+
+
+# 账号密码备忘
+wifi: pbcti202303
+
+### 网络接入
+11.1.215.157
+账号 gs_姓名全拼
+密码 Kfcs@123
+
+### 数据库
+11.1.196.238 
+esns minxing123
+SI: orcl
+
+### 测试环境全网管理员
+
+admin
+hnnx1234
+
+域管理员
+域应用管理员
+公众号管理员
+审批管理员
+人员组织管理员
+信息收集管理员
+移动考勤管理员
+考试管理员
+工作汇报管理员
+应用可见权限管理员
+问题反馈管理员
+需求管理
+文件库管理员
+微党课管理员
+数据权限管理
+在线答疑管理员
+意见箱管理员
+巡察举报管理员
+工作日报管理员
+问卷调查管理员
+运营大数据管理员
+督办管理员
+预警监测管理员
+固定资产询价管理员
+
+
+# ruby 下载代码问题
+```shell
+git clone --depth=1 git@git.dehuinet.com:ruby_server/ewhine_l.git
+cd ewhine_l
+git remote set-branches origin '8.3.0'
+git fetch --depth 1 origin 8.3.0
+git checkout 8.3.0
+```
+
+
+# 
+![](../images/2023-06-29-17-30-58.png)
+`window.sessionStorage.setItem("DomainId", App.Options.current_domain_id);`
