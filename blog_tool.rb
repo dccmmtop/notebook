@@ -31,6 +31,7 @@ class BlogTool
     end
     git_save(@notebook_dir)
     if local
+      git_save(@deploy_blog_dir)
       deploy()
     else
       git_save(@deploy_blog_dir)
@@ -41,7 +42,7 @@ class BlogTool
     puts "获取远程最新"
     `cd #{@dist_dir} && git pull`
     puts "本地生成"
-    `cd #{@deploy_blog_dir} && hugo`
+    `cd #{@deploy_blog_dir} &&  git pull && hugo`
     puts "复制到部署目录"
     FileUtils.cp_r(Dir.glob("#{@deploy_blog_dir}/public/*"), @dist_dir)
     puts "推送"
@@ -96,7 +97,7 @@ class BlogTool
   end
 
   def git_save(path)
-    cmd = "cd #{path} && git add . && git commit -m 'update' && git push"
+    cmd = "cd #{path} && git add . && git commit -m 'update' && git pull && git push"
     puts cmd
     system(cmd)
   end
