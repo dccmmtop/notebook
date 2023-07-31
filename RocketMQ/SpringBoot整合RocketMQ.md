@@ -14,7 +14,6 @@ SpringBoot整合RocketMQ使用非常简单，下面是一个简单的例子，�
 ![](../images/2023-07-29-18-21-22.png)
 
 ## 依赖
-
 ```xml
 <dependencies>
     <dependency>
