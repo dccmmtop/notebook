@@ -112,6 +112,13 @@ RocketMQ 消息存储分为 3 个部分：
 ### IndexFile
 提供了一种可以通过 key，和时间区间查询消息的方法，这种查找方法不影响消息的发送和消费
 
+### cnfig
+运行期间一些配置信息
+### abort
+如果存在改文件寿命 Broker: 非正常关闭
+### checkpoint:
+文件检查点，存储 CommitLog 文件最后一次刷盘时间戳、consumerquueue 最后一次刷盘时间，index 索引文件最后一次刷盘时间戳。
+
 ![](../images/2023-08-05-16-10-37.png)
 
 ## 刷盘机制
