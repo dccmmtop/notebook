@@ -187,16 +187,91 @@ mvn clean install
 ```
 Install 插件的 install 且标将项且的构建输出文件安装到本地仓库
 
-
 ### 远程仓库
 
 **maven 同时只能使用一个本地仓库，但是可以配置多个远程仓库**
 
 #### 中央仓库
 
-由于最原始的本地仓库是空的，Maven必须知道至少一个可用的远程仓库，才能在执行 Maven命令的时候下载到需要的构件。中央仓库就是这样一个默认的远程仓库，Maven的安装文件自带了中央仓库的配置。 可以使用解压工具打开jar文件$M2_HOME/lib/maven-model-builder-3.0.jar, 然后访问路径org/apache/maven/model/pom-4.0.0.xml,可以看到如下的配置：
+由于最原始的本地仓库是空的，Maven 必须知道至少一个可用的远程仓库，才能在执行 Maven 命令的时候下载到需要的构件。中央仓库就是这样一个默认的远程仓库，Maven 的安装文件自带了中央仓库的配置。 可以使用解压工具打开 jar 文件$M2_HOME/lib/maven-model-builder-3.0.jar, 然后访问路径 org/apache/maven/model/pom-4.0.0.xml, 可以看到如下的配置：
 ![](../images/2023-10-18-08-19-22.png)
 
-包含这段配置的文件是所有Maven项目都会继承的超级POM
+包含这段配置的文件是所有 Maven 项目都会继承的超级 POM
+
+#### 私服
+私服是一种特殊的远程仓库，它是架设在局域网内的仓库服务，私服代理广域网上的 远程仓库，供局域网内的 Maven 用户使用。当 Maven 需要下载构件的时候，它从私服请求 如果私服上不存在该构件，则从外部的远程仓库下载，缓存在私服上之后，再为 Maven 的 下载请求提供服务。此外，一些无法从外部仓库下载到的构件也能从本地上传到私服上供大家使用
+
+**优点：**
+1. 节省外网带宽
+2. 加速 Maven 构建
+3. 部署第三方构件
+4. 提高稳定性，增强控制
+5. 降低中央仓库的负荷
+
+### 远程仓库的配置
+
+很多情况下，默认的中央仓库无法满足需求，可能项目需要的构件存在于另一个远程仓库中，如 JBoss Maven 仓库，这时可以在 POM 中配置该仓库：
+```xml
+<repositories>
+  <repository>
+    <id>jboss</id>
+    <name>JBoss Repository</name>
+    <url>https://repository.jboss.com/maven2</url>
+    <releases>
+      <enabled> true </enabled>
+      <updatePolicy>always</updatePolicy>
+    </releases>
+    <snapshots>
+      <enabled> true </enabled>
+    </snapshots>
+    <authentication>
+      <username>your-username</username>
+      <password>your-password</password>
+    </authentication>
+  </repository>
+  <!-- 添加其他远程仓库 -->
+</repositories>
+```
+任何一个仓库的 id 必须是唯一的，需要注意的是，maven 自带的中央仓库的 id 是 central, 如果其他仓库的声明也使用该 Id， 就会覆盖中央仓库的配置
+
+enabled 子元素，该例中 releases 的 enabled 值为 true, 表示开启 JBoss 仓库的发布版本下载支持而 snapshots 的 enabled 值为 false, 表示关闭 JBoss 仓库的快照版本的下载支持。
+
+元素 updatePolicy 用来配置 Maven 从远程仓库检查更新的频率，默认的值是 daily, 表示 Maven 每天检查-次。其他可用的值包括：never-一从不检查更新；always-一每次构建都检查 更新；interval:X 一每隔 X 分钟检查一次更新，X 为任意整数。
+
+### 部署至远程仓库
+
+在项目的 pom 文件中添加：
+```xml
+<project>
+...
+
+<distributionManagement>
+  <repository>
+    <id>remote-repo</id>
+    <url>http://example.com/repository</url>
+  </repository>
+  <snapshotRepository>
+    <id>remote-snapshot-repo</id>
+    <url>http://example.com/snapshot-repository</url>
+  </snapshotRepository>
+</distributionManagement>
+</project>
+```
+
+distributionManagement 包含 repository 和 snapshotRepository 子元素，前者表示发布版本构 件的仓库，后者表示快照版本的仓库
+
+往往该仓库需要认证，还需要zai setting.xml 中添加认证信息:
+
+```xml
+<servers>
+  <server>
+    <id>remote-repo</id>
+    <username>your-username</username>
+    <password>your-password</password>
+  </server>
+</servers>
+```
+
+然后执行 mvn clean deploy
 
 > 联系方式：dccmmtop@foxmail.com
