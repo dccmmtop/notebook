@@ -260,8 +260,7 @@ enabled 子元素，该例中 releases 的 enabled 值为 true, 表示开启 JBo
 
 distributionManagement 包含 repository 和 snapshotRepository 子元素，前者表示发布版本构 件的仓库，后者表示快照版本的仓库
 
-往往该仓库需要认证，还需要zai setting.xml 中添加认证信息:
-
+往往该仓库需要认证，还需要 zai setting.xml 中添加认证信息：
 ```xml
 <servers>
   <server>
@@ -273,5 +272,49 @@ distributionManagement 包含 repository 和 snapshotRepository 子元素，前�
 ```
 
 然后执行 mvn clean deploy
+
+### 镜像
+
+如果仓库 X 可以提供仓库 Y 存储的所有内容，那么就可以认为 X 是 Y 的一个镜像。换句话说，任何一个可以从仓库 Y 获得的构件，都能够从它的镜像中获取。
+
+```xml
+<mirrors>
+  <mirror>
+    <id>mirrorId</id>
+    <url>http://mirror.example.com/repository</url>
+    <mirrorOf>central</mirrorOf>
+  </mirror>
+</mirrors>
+```
+
+该例中，<mirrorOf>的值为 central, 表示该配置**为中央仓库的镜像**， 任何对于中央仓 库的请求都会**转至该镜像**，也可以使用同样的方法配置其他仓库的镜像。另外三个元素 id、name、url 与一般仓库配置无异，表示该镜像仓库的唯一标识符、名称以及地址。 如果该镜像需要认证，也可以基于该 d 配置仓库认证
+
+镜像最常见的一个用法就是结合私服，由于私服可以代理任何外部的仓库，因此，对于组织内部的用户来说，使用了一个私服地址，就等于使用了所有需要的外部仓库，在这种情况下，任何构件都可以从私服中获得，私服就像是所有仓库的镜像。可以有如下配置：
+
+```xml
+<mirrors>
+  <mirror>
+    <id>mirrorId</id>
+    <url>http://192.168.1.100/maven2</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+```
+
+为了满足一些复杂的需求，Maven 还支持更高级的镜像配置：
+1. <mirrorOf>*</mirrorOf>: 匹配所有远程仓库。
+2. <mirrorOf>external:*</mirrorOf>: 匹配所有远程仓库，使用 localhost 的除外， 使用 file://协议的除外。也就是说，匹配所有不在本机上的远程仓库。
+3. <mirrorOf>repol,repo2</mirrorOf>: 匹配仓库 repol 和 repo2, 使用逗号分隔多个远程仓库。
+4. <mirrorOf>*,！repol</mirrorOf>: 匹配所有远程仓库，repol 除外，使用感叹号将仓库从匹配中排除。
+
+需要注意的是，由于镜像仓库完全屏蔽了被镜像仓库，当镜像仓库不稳定或者停止服务的时候，Maven 仍将无法访问被镜像仓库，因而将无法下载构件。
+
+## 声明周期和插件
+
+除了坐标、依赖以及仓库之外，Maven 另外两个核心概念是**生命周期和插件**。在有关 Maven 的日常使用中，命令行的输入往往就对应了生命周期，如 mvn package 就表示执行默认**生命周期阶段 package**。Maven 的生命周期是**抽象**的，其**实际行为都由插件**来完成，如 package 阶段的任务可能就会由 maven-jar-plugin 完成。生命周期和插件两者协同工作，密不可分.
+
+
+声明周期抽象的定义了每个步骤，如 deploy，就包含了 编译，测试，打包，部署这些生命周期，但是没有提供具体实现，maven设计了插件机制，每个构件步骤都可以绑定一个或者多个插件行为，而且maven为大多数构件步骤都绑定了默认的插件，比如针对编译的插件：maven-compiler-plugin, **大多数时间内用户不会感受到插件的存在**，但实际上各个功能都是有插件完成的。
+
 
 > 联系方式：dccmmtop@foxmail.com
