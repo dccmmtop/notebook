@@ -1,5 +1,5 @@
 ---
-title: Sharding分库分表与读写分离实战
+title: ShardingSphere分库分表与读写分离实战
 date: 2023-12-10 16:54:08
 tags: [mysql]
 ---
