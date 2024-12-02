@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ende",
+            "type": "shell",
+            "command": "ruby",
+            "args": [
+                "C:\\Users\\Administrator\\notebook\\blog_tool.rb",
+                "auto",
+                "${file}"
+            ]
+        }
+    ]
+}

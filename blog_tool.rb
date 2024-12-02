@@ -158,6 +158,26 @@ class BlogTool
     end
     url
   end
+  
+  def auto_en_de(file_name)
+    content = File.read(file_name)
+    if content.start_with?(@encrypt_flag)
+      puts "执行解密"
+      content.gsub!(@encrypt_flag,"")
+      content = decrypt(content, @password)
+      puts content
+      File.open(file_name, "w") do |io|
+        io.puts content
+      end
+    else
+      puts "执行加密: #{@password}"
+      content = @encrypt_flag +  encrypt(content, @password)
+      puts content
+      File.open(file_name, "w") do |io|
+        io.print content
+      end
+    end
+  end
 
   def encrypt_blog(file_name, pass = "")
     @password = pass if pass.to_s != ""
@@ -278,9 +298,21 @@ if first_arg == "de"
   return
 end
 
+if first_arg == "auto"
+  blog_file = ARGV[1]
+  pass = ARGV[2]
+  if blog_file.to_s == ""
+    puts "缺少要加解密的文件"
+    return
+  end
+  blog_tool.auto_en_de(blog_file)
+  return
+end
+
 puts "==========帮助文档==========="
 puts "./blog_tool.rb l # 本地部署"
 puts "./blog_tool.rb r # 远程部署"
 puts "./blog_tool.rb c ./1.md # 将博客中的本地图片转换成图床中的链接"
 puts "./blog_tool.rb en ./1.md # 加密 1.md 文件"
 puts "./blog_tool.rb de ./1.md # 解密 1.md 文件"
+puts "./blog_tool.rb auto ./1.md # 自动判断解密解密 1.md 文件"
