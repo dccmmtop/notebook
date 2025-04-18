@@ -3,7 +3,6 @@ title: loading 组件示例
 date: 2025-04-18 07:49:53
 tags: [flutter]
 ---
-
 处理一些耗时的操作时，同时需要用户等待可以使用弹框加`flutter_spinkit`来实现 loading 效果
 
 **【注意】**
@@ -34,5 +33,4 @@ showDialog(
 );
 
 ```
-
 > 联系方式：dccmmtop@foxmail.com
