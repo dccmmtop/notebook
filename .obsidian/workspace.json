@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "5ea70e58ffc4d8b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4769fc92e8f415f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5ff831670bf307b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "elasticSearch/知识点索引.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "知识点索引"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "808eaf6b8350a9ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "b8bedd53c54ff51a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02a77d5e094b7cc4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "7b55266fc7b47662",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "865416005ca38350",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ece83417149c757a",
+    "type": "split",
+    "children": [
+      {
+        "id": "fbe44b96ad935fcc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98379b6855085f6e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "elasticSearch/知识点索引.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "知识点索引 的反向链接列表"
+            }
+          },
+          {
+            "id": "626a7419385e8a4e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "elasticSearch/知识点索引.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "知识点索引 的出链列表"
+            }
+          },
+          {
+            "id": "68951febd4fa6b18",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "fb93993dba69b1dc",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "ae3a7d9579c6831c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "elasticSearch/知识点索引.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "知识点索引 的大纲"
+            }
+          },
+          {
+            "id": "56e575d77fa6fad3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "02a77d5e094b7cc4",
+  "lastOpenFiles": [
+    "架构/幂等设计.md",
+    "架构/架构整洁之道书摘六——函数式编程.md",
+    "架构/架构整洁之道书摘八——软件架构.md",
+    "架构/估算工作量.md",
+    "工具/idea配置和插件导入导出的方法.md",
+    "工具/适应于Linux的子系统已终止.md",
+    "工具/个人微信打造成得力助手.md"
+  ]
+}
